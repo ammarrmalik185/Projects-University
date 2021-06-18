@@ -1,0 +1,77 @@
+﻿<Window x:Class="Assignment_3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Calculator" Height="540" Width="330">
+    <Grid Margin="0,0,0,68">
+        <TextBox x:Name="currentEquation" HorizontalAlignment="Center" Margin="0,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" Height="29" FontWeight="Bold" FontFamily="Adobe Gothic Std B" IsReadOnly="True">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="#FFABADB3" Opacity="0"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        <TextBox x:Name="currentNumber" HorizontalAlignment="Center" Margin="0,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="273" Height="64" FontWeight="Bold" FontFamily="Adobe Gothic Std B" Text="0" FontSize="36" TextAlignment="Right" IsReadOnly="True">
+            <TextBox.BorderBrush>
+                <SolidColorBrush Color="#FFABADB3" Opacity="0"/>
+            </TextBox.BorderBrush>
+        </TextBox>
+        
+        <!-- <Grid> -->
+        <!--     <Grid.ColumnDefinitions> -->
+        <!--         <ColumnDefinition Width="1*" /> -->
+        <!--         <ColumnDefinition Width="1*" /> -->
+        <!--         <ColumnDefinition Width="1*" /> -->
+        <!--         <ColumnDefinition Width="1*" /> -->
+        <!--     </Grid.ColumnDefinitions> -->
+        <!--     <Grid.RowDefinitions> -->
+        <!--         <RowDefinition Height="1*" /> -->
+        <!--         <RowDefinition Height="1*" /> -->
+        <!--         <RowDefinition Height="1*" /> -->
+        <!--         <RowDefinition Height="1*" /> -->
+        <!--         <RowDefinition Height="1*" /> -->
+        <!--         <RowDefinition Height="1*" /> -->
+        <!--     </Grid.RowDefinitions> -->
+        <!-- </Grid> -->
+        
+        <Grid HorizontalAlignment="Center" Margin="0,91,0,-64" Width="297">
+            <Grid Margin="10,10,10,321" Height="60">
+                <Button Content="%" Click="ButtonClick_Operator_Modulus" Margin="0,0,207,0" Width="70" FontSize="20"/>
+                <Button Content="C" Click="ButtonClick_Function_ClearAll" Margin="138,0,68,0" Width="70" FontSize="20"/>
+                <Button Content="&lt;-" Click="ButtonClick_Function_Backspace" Margin="207,0,0,0" Width="70" FontSize="20"/>
+                <Button Content="CE" Click="ButtonClick_Function_Clear" Margin="68,0,138,0" Width="70" FontSize="20"/>
+            </Grid>
+            <Grid Margin="10,70,10,262" Height="60">
+                <Button Content="1/x" Click="ButtonClick_Inverse" Margin="0,0,207,0" Width="70" FontSize="18"/>
+                <Button Content="x^(1/2)" Click="ButtonClick_Operator_SquareRoot" Margin="138,0,68,0" Width="70" FontSize="18"/>
+                <Button Content="/" Click="ButtonClick_Operator_Divide" Margin="207,0,0,0" Width="70" FontSize="20"/>
+                <Button Content="x^2" Click="ButtonClick_Operator_Square" Margin="68,0,138,0" Width="70" FontSize="18"/>
+            </Grid>
+            <Grid Margin="10,130,10,202" Height="60">
+                <Button Content="7" Click="ButtonClick_Number_7" Margin="0,0,207,0" Width="70" Background="White" FontWeight="Bold" FontSize="20"/>
+                <Button Content="9" Click="ButtonClick_Number_9" Margin="138,0,68,0" Width="70" Background="White" FontWeight="Bold" FontSize="20"/>
+                <Button Content="*" Click="ButtonClick_Operator_Multiply" Margin="207,0,0,0" Width="70" FontSize="20"/>
+                <Button Content="8" Click="ButtonClick_Number_8" Margin="68,0,138,0" Width="70" Background="White" FontWeight="Bold" FontSize="20"/>
+            </Grid>
+            <Grid Margin="10,190,10,142" Height="60">
+                <Button Content="4" Click="ButtonClick_Number_4" Margin="0,0,207,0" Width="70" Background="White" FontWeight="Bold" FontSize="20"/>
+                <Button Content="6" Click="ButtonClick_Number_6" Margin="138,0,68,0" Width="70" Background="White" FontWeight="Bold" FontSize="20"/>
+                <Button Content="-" Click="ButtonClick_Operator_Minus" Margin="207,0,0,0" Width="70" FontSize="20"/>
+                <Button Content="5" Click="ButtonClick_Number_5" Margin="68,0,138,0" Width="70" Background="White" FontWeight="Bold" FontSize="20"/>
+            </Grid>
+            <Grid Margin="10,250,10,82" Height="60">
+                <Button Content="1" Click="ButtonClick_Number_1" Margin="0,0,207,0" Width="70" Background="White" FontWeight="Bold" FontSize="20"/>
+                <Button Content="3" Click="ButtonClick_Number_3" Margin="138,0,68,0" Width="70" Background="White" FontWeight="Bold" FontSize="20"/>
+                <Button Content="+" Click="ButtonClick_Operator_Plus" Margin="207,0,0,0" Width="70" FontSize="20"/>
+                <Button Content="2" Click="ButtonClick_Number_2" Margin="68,0,138,0" Width="70" Background="White" FontWeight="Bold" FontSize="20"/>
+            </Grid>
+            <Grid Margin="10,310,10,22" Height="60">
+                <Button Content="+/-" Click="ButtonClick_Negative" Margin="0,0,207,0" Width="70" ContentStringFormat="" Background="White" FontSize="20"/>
+                <Button Content="." Click="ButtonClick_Point" Margin="138,0,68,0" Width="70" Background="White" FontSize="20"/>
+                <Button Content="=" Click="ButtonClick_Function_Solve" Margin="207,0,0,0" Width="70" Background="#FFD7FF00" FontSize="20"/>
+                <Button Content="0" Click="ButtonClick_Number_0" Margin="68,0,138,0" Width="70" Background="White" FontWeight="Bold" FontSize="20"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Window>

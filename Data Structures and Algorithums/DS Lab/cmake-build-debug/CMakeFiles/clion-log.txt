@@ -1,0 +1,1 @@
+MinGW not found at: E:\IDEs\CLion 2019.1\MinGW\mingw32 Configure Disable profile

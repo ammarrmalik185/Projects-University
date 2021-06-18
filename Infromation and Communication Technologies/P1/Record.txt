@@ -1,0 +1,16 @@
+Name:Ammar Malik
+Class:BSSE-1A
+Semester no 1
+
+
+GPA of Subject no 1 = 3
+GPA of Subject no 2 = 2
+GPA of Subject no 3 = 2
+GPA of Subject no 4 = 3.3
+GPA of Subject no 5 = 2
+
+Total Percentage is 22.040816326530614%
+Total GPA is 2.492857142857143
+
+
+

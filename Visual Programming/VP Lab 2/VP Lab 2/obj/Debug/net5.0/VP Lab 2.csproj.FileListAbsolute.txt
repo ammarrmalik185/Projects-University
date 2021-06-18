@@ -1,0 +1,16 @@
+E:\Rider Projects\University\Visual Programming\VP Lab 2\VP Lab 2\bin\Debug\net5.0\VP Lab 2.exe
+E:\Rider Projects\University\Visual Programming\VP Lab 2\VP Lab 2\bin\Debug\net5.0\VP Lab 2.deps.json
+E:\Rider Projects\University\Visual Programming\VP Lab 2\VP Lab 2\bin\Debug\net5.0\VP Lab 2.runtimeconfig.json
+E:\Rider Projects\University\Visual Programming\VP Lab 2\VP Lab 2\bin\Debug\net5.0\VP Lab 2.runtimeconfig.dev.json
+E:\Rider Projects\University\Visual Programming\VP Lab 2\VP Lab 2\bin\Debug\net5.0\VP Lab 2.dll
+E:\Rider Projects\University\Visual Programming\VP Lab 2\VP Lab 2\bin\Debug\net5.0\ref\VP Lab 2.dll
+E:\Rider Projects\University\Visual Programming\VP Lab 2\VP Lab 2\bin\Debug\net5.0\VP Lab 2.pdb
+E:\Rider Projects\University\Visual Programming\VP Lab 2\VP Lab 2\obj\Debug\net5.0\VP Lab 2.csprojAssemblyReference.cache
+E:\Rider Projects\University\Visual Programming\VP Lab 2\VP Lab 2\obj\Debug\net5.0\VP Lab 2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rider Projects\University\Visual Programming\VP Lab 2\VP Lab 2\obj\Debug\net5.0\VP Lab 2.AssemblyInfoInputs.cache
+E:\Rider Projects\University\Visual Programming\VP Lab 2\VP Lab 2\obj\Debug\net5.0\VP Lab 2.AssemblyInfo.cs
+E:\Rider Projects\University\Visual Programming\VP Lab 2\VP Lab 2\obj\Debug\net5.0\VP Lab 2.csproj.CoreCompileInputs.cache
+E:\Rider Projects\University\Visual Programming\VP Lab 2\VP Lab 2\obj\Debug\net5.0\VP Lab 2.dll
+E:\Rider Projects\University\Visual Programming\VP Lab 2\VP Lab 2\obj\Debug\net5.0\ref\VP Lab 2.dll
+E:\Rider Projects\University\Visual Programming\VP Lab 2\VP Lab 2\obj\Debug\net5.0\VP Lab 2.pdb
+E:\Rider Projects\University\Visual Programming\VP Lab 2\VP Lab 2\obj\Debug\net5.0\VP Lab 2.genruntimeconfig.cache

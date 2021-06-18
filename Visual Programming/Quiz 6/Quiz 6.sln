@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Quiz 6", "Quiz 6.csproj", "{AE7E491F-F4E0-47A2-B386-6D14A1F633DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE7E491F-F4E0-47A2-B386-6D14A1F633DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE7E491F-F4E0-47A2-B386-6D14A1F633DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE7E491F-F4E0-47A2-B386-6D14A1F633DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE7E491F-F4E0-47A2-B386-6D14A1F633DB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

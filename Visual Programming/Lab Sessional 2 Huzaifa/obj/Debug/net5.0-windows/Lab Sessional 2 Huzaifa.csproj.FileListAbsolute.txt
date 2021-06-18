@@ -1,0 +1,22 @@
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\bin\Debug\net5.0-windows\Lab Sessional 2 Huzaifa.exe
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\bin\Debug\net5.0-windows\Lab Sessional 2 Huzaifa.deps.json
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\bin\Debug\net5.0-windows\Lab Sessional 2 Huzaifa.runtimeconfig.json
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\bin\Debug\net5.0-windows\Lab Sessional 2 Huzaifa.runtimeconfig.dev.json
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\bin\Debug\net5.0-windows\Lab Sessional 2 Huzaifa.dll
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\bin\Debug\net5.0-windows\ref\Lab Sessional 2 Huzaifa.dll
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\bin\Debug\net5.0-windows\Lab Sessional 2 Huzaifa.pdb
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\obj\Debug\net5.0-windows\Lab Sessional 2 Huzaifa.csprojAssemblyReference.cache
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\obj\Debug\net5.0-windows\MainWindow.g.cs
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\obj\Debug\net5.0-windows\App.g.cs
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\obj\Debug\net5.0-windows\Lab Sessional 2 Huzaifa_MarkupCompile.cache
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\obj\Debug\net5.0-windows\Lab Sessional 2 Huzaifa_MarkupCompile.lref
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\obj\Debug\net5.0-windows\MainWindow.baml
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\obj\Debug\net5.0-windows\Lab Sessional 2 Huzaifa.g.resources
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\obj\Debug\net5.0-windows\Lab Sessional 2 Huzaifa.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\obj\Debug\net5.0-windows\Lab Sessional 2 Huzaifa.AssemblyInfoInputs.cache
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\obj\Debug\net5.0-windows\Lab Sessional 2 Huzaifa.AssemblyInfo.cs
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\obj\Debug\net5.0-windows\Lab Sessional 2 Huzaifa.csproj.CoreCompileInputs.cache
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\obj\Debug\net5.0-windows\Lab Sessional 2 Huzaifa.dll
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\obj\Debug\net5.0-windows\ref\Lab Sessional 2 Huzaifa.dll
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\obj\Debug\net5.0-windows\Lab Sessional 2 Huzaifa.pdb
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Huzaifa\obj\Debug\net5.0-windows\Lab Sessional 2 Huzaifa.genruntimeconfig.cache

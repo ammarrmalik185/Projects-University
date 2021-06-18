@@ -1,0 +1,27 @@
+{
+  "value": "3",
+  "Left": {
+    "value": "1"
+  },
+  "Right": {
+    "value": "9",
+    "Left": {
+      "value": "5",
+      "Right": {
+        "value": "7"
+      }
+    },
+    "Right": {
+      "value": "32",
+      "Left": {
+        "value": "17",
+        "Left": {
+          "value": "12"
+        },
+        "Left": {
+          "value": "10"
+        }
+      }
+    }
+  }
+}

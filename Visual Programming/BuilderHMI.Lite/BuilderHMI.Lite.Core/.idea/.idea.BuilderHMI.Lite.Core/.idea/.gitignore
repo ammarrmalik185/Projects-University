@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/contentModel.xml
+/projectSettingsUpdater.xml
+/.idea.BuilderHMI.Lite.Core.iml
+# Datasource local storage ignored files
+/../../../../../../../../../:\Rider Projects\University\Visual Programming\BuilderHMI.Lite\BuilderHMI.Lite.Core\.idea\.idea.BuilderHMI.Lite.Core\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

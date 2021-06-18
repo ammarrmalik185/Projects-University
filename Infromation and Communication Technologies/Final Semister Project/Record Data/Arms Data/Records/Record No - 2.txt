@@ -1,0 +1,6 @@
+Serial Number     = 2
+Model Name        = lol
+Dealer Name = llooll
+Gun Caliber       = 4
+Price             = 2
+Quantity          = 0

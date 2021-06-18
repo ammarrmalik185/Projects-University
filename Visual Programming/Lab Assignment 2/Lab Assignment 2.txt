@@ -1,0 +1,295 @@
+// Name: Ammar Rashid Malik
+// Reg no: FA18-BSE-011
+// Class: BSSE-6A
+
+//
+//
+// part 1
+//
+//
+
+using System;
+
+namespace Lab_Assignment_2 {
+    public class Part_1 {
+    }
+
+    class DayCollection {
+        public int this[string day] {
+            get {
+                switch (day) {
+                    case "Sunday":
+                        return 0;
+                    case "Monday":
+                        return 1;
+                    case "Tuesday":
+                        return 2;
+                    case "Wednesday":
+                        return 3;
+                    case "Thursday":
+                        return 4;
+                    case "Friday":
+                        return 5;
+                    case "Saturday":
+                        return 6;
+                    default:
+                        throw new ArgumentOutOfRangeException();
+                } 
+            }
+        }
+    }
+}
+
+//
+//
+// part 2
+//
+//
+
+using System;
+
+namespace Lab_Assignment_2 {
+    class Program {
+        static void Main(string[] args) {
+            Box a = new Box(4 ,6 , 7);
+            Box b = new Box(10, 20, 30);
+            Console.WriteLine(a == b);
+            Console.WriteLine(a != b);
+            Console.WriteLine(a > b);
+            Console.WriteLine(a < b);
+            Console.WriteLine(a >= b);
+            Console.WriteLine(a <= b);
+        }
+    }
+
+    class Box{
+        private double width;
+        private double lenght;
+        private double height;
+
+        public Box(double width, double lenght, double height) {
+            this.width = width;
+            this.lenght = lenght;
+            this.height = height;
+        }
+        public Box() {
+        }
+        
+        public double getVolume() {
+            return width * lenght * height;
+        }
+        
+        // both the setter and properties were not needed but the assignment said to make properties so ...
+        public void setWidth(double w) {
+            width = w;
+        }
+        public void setLenght(double l) {
+            lenght = l;
+        }
+        public void setHeight(double h) {
+            height = h;
+        }
+        
+        public static bool operator== (Box a, Box b) {
+            return a.getVolume() == b.getVolume();
+        }
+        public static bool operator!= (Box a, Box b) {
+            return a.getVolume() != b.getVolume();
+        }
+        public static bool operator> (Box a, Box b) {
+            return a.getVolume() > b.getVolume();
+        }
+        public static bool operator>= (Box a, Box b) {
+            return a.getVolume() >= b.getVolume();
+        }
+        public static bool operator< (Box a, Box b) {
+            return a.getVolume() < b.getVolume();
+        }
+        public static bool operator<= (Box a, Box b) {
+            return a.getVolume() <= b.getVolume();
+        }
+
+        public double Width {
+            get => width;
+            set => width = value;
+        }
+        public double Lenght {
+            get => lenght;
+            set => lenght = value;
+        }
+        public double Height {
+            get => height;
+            set => height = value;
+        }
+    }
+}
+
+//
+//
+// part 3
+//
+//
+
+using System;
+
+namespace Lab_Assignment_2 {
+    public class Part_3 {
+        public static void Main(string[] args) {
+            BSE_Student student = new BSE_Student("Ammar", "FA18-BSE-011", "3.64", "Male");
+            CSTeacher teacher = new CSTeacher("a", "b", "c", new DateTime(), "male");
+            while (true)
+                try {
+                    Console.Write("Options: \n" + "1 - Add\n2 - Update\n3 - Delete\n4 - View\n5 - Exit\n");
+                    var campusInt = int.Parse(Console.ReadLine());
+                    switch (campusInt) {
+                        case 1:
+                            student.Add();
+                            break;
+                        case 2:
+                            student.Update();
+                            break;
+                        case 3:
+                            student.Delete();
+                            break;
+                        case 4:
+                            Console.WriteLine(student);
+                            break;
+                        case 5:
+                            return;
+                        default:
+                            throw new ArgumentException("Invalid Option");
+                    }
+                }
+                catch (Exception) {
+                    Console.WriteLine("Invalid option.. try again");
+                }
+            
+        }
+    }
+
+    public interface IPerson {
+        void Add();
+        void Update();
+        void Delete();
+    }
+
+    abstract class Student : IPerson {
+        private string name;
+        private string registration;
+        private string cgpa;
+        private string gender;
+
+        protected Student(string name, string registration, string cgpa, string gender) {
+            this.name = name;
+            this.registration = registration;
+            this.cgpa = cgpa;
+            this.gender = gender;
+        }
+
+        public string Name {
+            get => name;
+            set => name = value;
+        }
+
+        public string Registration {
+            get => registration;
+            set => registration = value;
+        }
+
+        public string Cgpa {
+            get => cgpa;
+            set => cgpa = value;
+        }
+
+        public string Gender {
+            get => gender;
+            set => gender = value;
+        }
+
+        public void Add() {
+            Console.WriteLine("student added");
+        }
+
+        public void Update() {
+            Console.WriteLine("student updated");
+        }
+
+        public void Delete() {
+            Console.WriteLine("student deleted");
+        }
+
+        public override string ToString() {
+            return $"Name: {this.name}, Reg Id: {registration}, Gender{gender}";
+        }
+    }
+    
+    abstract class Teacher : IPerson {
+        private string name;
+        private string course;
+        private string highestDegree;
+        private DateTime dateOfJoining;
+        private string gender;
+
+        protected Teacher(string name, string course, string highestDegree, DateTime dateOfJoining, string gender) {
+            this.name = name;
+            this.course = course;
+            this.highestDegree = highestDegree;
+            this.dateOfJoining = dateOfJoining;
+            this.gender = gender;
+        }
+
+        public string Name {
+            get => name;
+            set => name = value;
+        }
+
+        public string Course {
+            get => course;
+            set => course = value;
+        }
+
+        public string HighestDegree {
+            get => highestDegree;
+            set => highestDegree = value;
+        }
+
+        public DateTime DateOfJoining {
+            get => dateOfJoining;
+            set => dateOfJoining = value;
+        }
+
+        public string Gender {
+            get => gender;
+            set => gender = value;
+        }
+
+        public void Add() {
+            Console.WriteLine("teacher added");
+        }
+
+        public void Update() {
+            Console.WriteLine("teacher updated");
+        }
+
+        public void Delete() {
+            Console.WriteLine("teacher deleted");
+        }
+        
+        public override string ToString() {
+            return $"Name: {this.name}, Course: {course}, Gender{gender}";
+        }
+    }
+
+    class BSE_Student : Student {
+        public BSE_Student(string name, string registration, string cgpa, string gender) : base(name, registration, cgpa, gender) {
+            
+        }
+    }
+    
+    class CSTeacher : Teacher {
+        public CSTeacher(string name, string course, string highestDegree, DateTime dateOfJoining, string gender) : base(name, course, highestDegree, dateOfJoining, gender) {
+            
+        }
+    }
+    
+}

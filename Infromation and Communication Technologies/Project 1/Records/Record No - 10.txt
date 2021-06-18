@@ -1,0 +1,5 @@
+Serial Number = 10
+Model Name = Hannan
+Manufacturer Name = ok
+Gun Caliber = Chawal
+Price = 0

@@ -1,0 +1,5 @@
+Serial Number6
+Model Name(AR-15)
+Manufacturer Name(america)
+Gun Caliber(19)
+Price(900000)

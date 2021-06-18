@@ -1,0 +1,6 @@
+Serial Number     = 3
+Model Name        = Ammar
+Dealer Name       = OK
+Gun Caliber       = OK
+Price             = 9
+Quantity          = 5

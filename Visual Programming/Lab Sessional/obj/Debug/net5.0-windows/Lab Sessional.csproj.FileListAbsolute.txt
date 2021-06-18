@@ -1,0 +1,21 @@
+E:\Rider Projects\University\Visual Programming\Lab Sessional\bin\Debug\net5.0-windows\Lab Sessional.exe
+E:\Rider Projects\University\Visual Programming\Lab Sessional\bin\Debug\net5.0-windows\Lab Sessional.deps.json
+E:\Rider Projects\University\Visual Programming\Lab Sessional\bin\Debug\net5.0-windows\Lab Sessional.runtimeconfig.json
+E:\Rider Projects\University\Visual Programming\Lab Sessional\bin\Debug\net5.0-windows\Lab Sessional.runtimeconfig.dev.json
+E:\Rider Projects\University\Visual Programming\Lab Sessional\bin\Debug\net5.0-windows\Lab Sessional.dll
+E:\Rider Projects\University\Visual Programming\Lab Sessional\bin\Debug\net5.0-windows\ref\Lab Sessional.dll
+E:\Rider Projects\University\Visual Programming\Lab Sessional\bin\Debug\net5.0-windows\Lab Sessional.pdb
+E:\Rider Projects\University\Visual Programming\Lab Sessional\obj\Debug\net5.0-windows\Lab Sessional.csprojAssemblyReference.cache
+E:\Rider Projects\University\Visual Programming\Lab Sessional\obj\Debug\net5.0-windows\MainWindow.g.cs
+E:\Rider Projects\University\Visual Programming\Lab Sessional\obj\Debug\net5.0-windows\App.g.cs
+E:\Rider Projects\University\Visual Programming\Lab Sessional\obj\Debug\net5.0-windows\Lab Sessional_MarkupCompile.cache
+E:\Rider Projects\University\Visual Programming\Lab Sessional\obj\Debug\net5.0-windows\MainWindow.baml
+E:\Rider Projects\University\Visual Programming\Lab Sessional\obj\Debug\net5.0-windows\Lab Sessional.g.resources
+E:\Rider Projects\University\Visual Programming\Lab Sessional\obj\Debug\net5.0-windows\Lab Sessional.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rider Projects\University\Visual Programming\Lab Sessional\obj\Debug\net5.0-windows\Lab Sessional.AssemblyInfoInputs.cache
+E:\Rider Projects\University\Visual Programming\Lab Sessional\obj\Debug\net5.0-windows\Lab Sessional.AssemblyInfo.cs
+E:\Rider Projects\University\Visual Programming\Lab Sessional\obj\Debug\net5.0-windows\Lab Sessional.csproj.CoreCompileInputs.cache
+E:\Rider Projects\University\Visual Programming\Lab Sessional\obj\Debug\net5.0-windows\Lab Sessional.dll
+E:\Rider Projects\University\Visual Programming\Lab Sessional\obj\Debug\net5.0-windows\ref\Lab Sessional.dll
+E:\Rider Projects\University\Visual Programming\Lab Sessional\obj\Debug\net5.0-windows\Lab Sessional.pdb
+E:\Rider Projects\University\Visual Programming\Lab Sessional\obj\Debug\net5.0-windows\Lab Sessional.genruntimeconfig.cache

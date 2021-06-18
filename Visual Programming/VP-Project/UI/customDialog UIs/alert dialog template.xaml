@@ -1,0 +1,33 @@
+﻿<Window x:Class="VP_Project.UI.customDialog_UIs.alert_dialog_template"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Title="Alert"
+        Background="Transparent"
+        AllowsTransparency="True"
+        Icon="../../Resources/Icons/mainIcon.png">
+    <Border
+        Background="#170072"
+        CornerRadius="20"
+        Height="200px"
+        Width="400px"
+        >
+        <StackPanel Margin="60px 20px" VerticalAlignment="Center">
+            <Label 
+                VerticalAlignment="Center" 
+                HorizontalAlignment="Center" 
+                Foreground="White" 
+                FontSize="20"
+                Margin="5px" >
+                <TextBlock x:Name="messageShow" TextWrapping="Wrap" Text = "Example"/>
+            </Label>
+            <StackPanel Margin="5px" HorizontalAlignment="Center" Orientation="Horizontal">
+                <Button Click="Confirm_OnClick" Style="{StaticResource MaterialDesignRaisedAccentButton}" Margin="2px" x:Name="confirm" Content="Ok"/>
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</Window>

@@ -1,0 +1,12 @@
+E:\Rider Projects\University\Visual Programming\Test\bin\Debug\Test.exe
+E:\Rider Projects\University\Visual Programming\Test\bin\Debug\Test.pdb
+E:\Rider Projects\University\Visual Programming\Test\bin\Debug\Firebase.Storage.dll
+E:\Rider Projects\University\Visual Programming\Test\bin\Debug\Newtonsoft.Json.dll
+E:\Rider Projects\University\Visual Programming\Test\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+E:\Rider Projects\University\Visual Programming\Test\bin\Debug\Newtonsoft.Json.xml
+E:\Rider Projects\University\Visual Programming\Test\bin\Debug\System.Diagnostics.DiagnosticSource.xml
+E:\Rider Projects\University\Visual Programming\Test\obj\Debug\Test.csprojAssemblyReference.cache
+E:\Rider Projects\University\Visual Programming\Test\obj\Debug\Test.csproj.CoreCompileInputs.cache
+E:\Rider Projects\University\Visual Programming\Test\obj\Debug\Test.csproj.CopyComplete
+E:\Rider Projects\University\Visual Programming\Test\obj\Debug\Test.exe
+E:\Rider Projects\University\Visual Programming\Test\obj\Debug\Test.pdb

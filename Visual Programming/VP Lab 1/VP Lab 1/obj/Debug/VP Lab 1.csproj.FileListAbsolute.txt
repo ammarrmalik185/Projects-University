@@ -1,0 +1,6 @@
+E:\Rider Projects\University\Visual Programming\VP Lab 1\VP Lab 1\bin\Debug\VP_Lab_1.exe
+E:\Rider Projects\University\Visual Programming\VP Lab 1\VP Lab 1\bin\Debug\VP_Lab_1.pdb
+E:\Rider Projects\University\Visual Programming\VP Lab 1\VP Lab 1\obj\Debug\VP Lab 1.csprojAssemblyReference.cache
+E:\Rider Projects\University\Visual Programming\VP Lab 1\VP Lab 1\obj\Debug\VP Lab 1.csproj.CoreCompileInputs.cache
+E:\Rider Projects\University\Visual Programming\VP Lab 1\VP Lab 1\obj\Debug\VP_Lab_1.exe
+E:\Rider Projects\University\Visual Programming\VP Lab 1\VP Lab 1\obj\Debug\VP_Lab_1.pdb

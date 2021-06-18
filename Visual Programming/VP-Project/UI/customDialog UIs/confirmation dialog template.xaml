@@ -1,0 +1,34 @@
+﻿<Window x:Class="VP_Project.UI.customDialog_UIs.confirmation_dialog_template"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:VP_Project.UI.customDialog_UIs"
+        mc:Ignorable="d" 
+        WindowStyle="None"
+        ResizeMode="NoResize"
+        Title="Alert"
+        AllowsTransparency="True"
+        Background="Transparent"
+        Icon="../../Resources/Icons/mainIcon.png">
+    <Border
+        Background="#170072"
+        Height="200px"
+        Width="400px"
+        CornerRadius="20">
+        <StackPanel VerticalAlignment="Center" Margin="20px">
+            <Label 
+                VerticalAlignment="Center" 
+                HorizontalAlignment="Center" 
+                Foreground="White" 
+                FontSize="20"
+                Margin="5px" >
+                <TextBlock x:Name="messageShow" TextWrapping="Wrap" Text = "Example"/>
+            </Label>
+            <StackPanel Margin="5px" HorizontalAlignment="Center" Orientation="Horizontal">
+                <Button Style="{StaticResource MaterialDesignRaisedAccentButton}" Margin="2px" x:Name="confirm" Content="Yes"/>
+                <Button Click="Decline_OnClick" Style="{StaticResource MaterialDesignRaisedAccentButton}" Margin="2px" x:Name="decline" Content="No"/>
+            </StackPanel>
+        </StackPanel>
+    </Border>
+</Window>

@@ -1,0 +1,4 @@
+Dealer Name        :Ammar
+Dealer country     :Pakistan
+Dealer rating      :5
+Dealer contact no  :15

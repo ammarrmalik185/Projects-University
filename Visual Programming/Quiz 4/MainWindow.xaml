@@ -1,0 +1,22 @@
+﻿<Window x:Class="Quiz_4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Quiz_4"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Menu Height="20" VerticalAlignment="Top" Margin="0,0,10,0">
+            <MenuItem Header="Edit" Height="20" Width="68">
+                <MenuItem Header="Copy" HorizontalAlignment="Left" Height="20" Width="173"/>
+                <MenuItem Header="Cut" HorizontalAlignment="Left" Height="20" Width="173"/>
+                <MenuItem Click="MenuItem_OnClick" InputGestureText="Ctrl+T" Header="Time/Date" HorizontalAlignment="Left" Height="20" Width="173"/>
+            </MenuItem>
+        </Menu>
+        <TextBox x:Name="TextBox" Height="23" Margin="0,25,10,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top"/>
+    </Grid>
+    <Window.InputBindings>
+        <KeyBinding Key="T" Modifiers="Control" Command="{Binding Path = TimeCommand}"></KeyBinding>
+    </Window.InputBindings>
+</Window>

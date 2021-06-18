@@ -1,0 +1,4 @@
+﻿Todo: Fix Issue
+--------->Todo: Post and people sorting not working updating
+--------->Todo: Slow loading of post list
+--------->Todo: Video post crashes the software

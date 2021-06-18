@@ -1,0 +1,83 @@
+﻿<Grid
+    x:Class="VP_Project.UI.post_tab_template"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:postUIs="clr-namespace:VP_Project.UI.post_UIs"
+    xmlns:commentUIs="clr-namespace:VP_Project.UI.comment_UIs"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    mc:Ignorable="d"
+    MinHeight="450" MinWidth="800"
+    Background="White">
+    
+    <Grid.RowDefinitions>
+        <RowDefinition Height="50px"></RowDefinition>
+        <RowDefinition></RowDefinition>
+    </Grid.RowDefinitions>
+    
+    <Grid Grid.RowSpan="2"  x:Name="commentOverlay" Panel.ZIndex="1000" Visibility="Collapsed">
+    <Grid.Background>
+        <SolidColorBrush Color="Black" Opacity=".7"/>
+    </Grid.Background>
+        <Border Background="#170072" HorizontalAlignment="Center" VerticalAlignment="Center" CornerRadius="10">
+            <Grid Margin="10px" VerticalAlignment="Center" HorizontalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <ListView x:Name="commentViewList" MaxHeight="300px" ItemTemplate="{DynamicResource commentTemplate}">
+                    <ListView.Resources>
+                        <DataTemplate x:Key="commentTemplate">
+                            <commentUIs:comment_view_template CommentUpdated="comment_view_template_OnCommentUpdated"/>
+                        </DataTemplate>
+                    </ListView.Resources>
+                </ListView>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Orientation="Horizontal">
+                    <TextBox
+                        Width="300px"
+                        x:Name="commentContent"
+                        Foreground="White"
+                        BorderBrush="White"
+                        materialDesign:HintAssist.Hint="Comment"
+                        materialDesign:HintAssist.HelperTextFontSize="16" />
+                    <Button
+                        Click="buttonClick_Comment_Send"
+                        Background="Transparent"
+                        ToolTip="Send">
+                        <materialDesign:PackIcon
+                            Kind="Send" />
+                    </Button>
+                    <Button
+                        Click="buttonClick_Comment_Close"
+                        Background="Transparent"
+                        ToolTip="Close">
+                        <materialDesign:PackIcon
+                            Kind="Close" />
+                    </Button>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+
+    
+    
+    <Border Grid.Row="0" Background="#282C1BFF" BorderBrush="#502C1BFF" BorderThickness="1px" CornerRadius="10">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label VerticalAlignment="Center">Search Item</Label>
+                <TextBox x:Name="postSearchBar" Width="200px" Background="Transparent" Foreground="Black" FontSize="20" VerticalAlignment="Center" BorderThickness="0px 0px 0px 1px"></TextBox>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Label VerticalAlignment="Center">Sort By:</Label>
+                <ComboBox x:Name="sortPostsByBox" Width="200px"></ComboBox>
+            </StackPanel>
+        </Grid>
+    </Border>
+    <postUIs:post_view_list_template PostDeleted="PostViewer_OnPostDeleted" CommentPressed="commentButtonPressed" x:Name="postViewer" Grid.Row="1" />
+</Grid>
+

@@ -1,0 +1,46 @@
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\bin\Debug\Database.mdf
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\bin\Debug\Database_log.ldf
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\bin\Debug\Assignment 4.exe.config
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\bin\Debug\Assignment 4.exe
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\bin\Debug\Assignment 4.pdb
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\bin\Debug\EntityFramework.dll
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\bin\Debug\EntityFramework.SqlServer.dll
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\bin\Debug\EntityFramework.xml
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\bin\Debug\EntityFramework.SqlServer.xml
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\obj\Debug\Assignment 4.csprojAssemblyReference.cache
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\obj\Debug\MainWindow.g.cs
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\obj\Debug\App.g.cs
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\obj\Debug\Assignment 4_Content.g.cs
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\obj\Debug\Assignment 4_MarkupCompile.cache
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\obj\Debug\Assignment 4_MarkupCompile.lref
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\obj\Debug\MainWindow.baml
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\obj\Debug\Assignment 4.g.resources
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\obj\Debug\Assignment_4.Properties.Resources.resources
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\obj\Debug\Assignment 4.csproj.GenerateResource.cache
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\obj\Debug\Assignment 4.csproj.CoreCompileInputs.cache
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\obj\Debug\Assignment 4.csproj.CopyComplete
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\obj\Debug\Assignment 4.exe
+E:\Rider Projects\University\Visual Programming\Assignment 4\Assignment 4\obj\Debug\Assignment 4.pdb
+E:\Rider Projects\University\Visual Programming\Assignment 4\bin\Debug\Database.mdf
+E:\Rider Projects\University\Visual Programming\Assignment 4\bin\Debug\Database_log.ldf
+E:\Rider Projects\University\Visual Programming\Assignment 4\bin\Debug\Assignment 4.exe.config
+E:\Rider Projects\University\Visual Programming\Assignment 4\bin\Debug\Assignment 4.exe
+E:\Rider Projects\University\Visual Programming\Assignment 4\bin\Debug\Assignment 4.pdb
+E:\Rider Projects\University\Visual Programming\Assignment 4\bin\Debug\EntityFramework.dll
+E:\Rider Projects\University\Visual Programming\Assignment 4\bin\Debug\EntityFramework.SqlServer.dll
+E:\Rider Projects\University\Visual Programming\Assignment 4\bin\Debug\EntityFramework.xml
+E:\Rider Projects\University\Visual Programming\Assignment 4\bin\Debug\EntityFramework.SqlServer.xml
+E:\Rider Projects\University\Visual Programming\Assignment 4\obj\Debug\Assignment 4.csprojAssemblyReference.cache
+E:\Rider Projects\University\Visual Programming\Assignment 4\obj\Debug\MainWindow.g.cs
+E:\Rider Projects\University\Visual Programming\Assignment 4\obj\Debug\App.g.cs
+E:\Rider Projects\University\Visual Programming\Assignment 4\obj\Debug\Assignment 4_Content.g.cs
+E:\Rider Projects\University\Visual Programming\Assignment 4\obj\Debug\Assignment 4_MarkupCompile.cache
+E:\Rider Projects\University\Visual Programming\Assignment 4\obj\Debug\Assignment 4_MarkupCompile.lref
+E:\Rider Projects\University\Visual Programming\Assignment 4\obj\Debug\MainWindow.baml
+E:\Rider Projects\University\Visual Programming\Assignment 4\obj\Debug\Assignment 4.g.resources
+E:\Rider Projects\University\Visual Programming\Assignment 4\obj\Debug\Assignment_4.Properties.Resources.resources
+E:\Rider Projects\University\Visual Programming\Assignment 4\obj\Debug\Assignment 4.csproj.GenerateResource.cache
+E:\Rider Projects\University\Visual Programming\Assignment 4\obj\Debug\Assignment 4.csproj.CoreCompileInputs.cache
+E:\Rider Projects\University\Visual Programming\Assignment 4\obj\Debug\Assignment 4.csproj.CopyComplete
+E:\Rider Projects\University\Visual Programming\Assignment 4\obj\Debug\Assignment 4.exe
+E:\Rider Projects\University\Visual Programming\Assignment 4\obj\Debug\Assignment 4.pdb

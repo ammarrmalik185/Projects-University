@@ -1,0 +1,58 @@
+﻿<Window x:Class="Lab_Sessional_2_Core.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab_Sessional_2_Core"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="5*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        <Grid Margin="2px">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0">Enter Name: </Label>
+                <TextBox Grid.Column="1" x:Name="stdName"></TextBox>
+            </Grid>
+            
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="2*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Column="0">Enter RegNo: </Label>
+                <TextBox Grid.Column="1" x:Name="stdRegNo"></TextBox>
+            </Grid>
+            
+            <Button Grid.Row="2" Click="ButtonBase_OnClick_Add">Add</Button>
+        </Grid>
+        <Grid Grid.Row="1" Margin="2px">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="2*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0">Enter Keyword: </Label>
+            <TextBox Grid.Column="1" x:Name="query"></TextBox>
+            <Button Grid.Column="2" Click="ButtonBase_OnClick">Search</Button>
+        </Grid>
+        <DataGrid Grid.Row="2" x:Name="dataView" Margin="2px">
+            
+        </DataGrid>
+        
+    </Grid>
+</Window>

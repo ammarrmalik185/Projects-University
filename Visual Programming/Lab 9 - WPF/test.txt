@@ -1,0 +1,30 @@
+private string getXML() {
+    string xmlString = "";
+    XmlTextReader reader = new XmlTextReader("\\activity 3.xml");
+    while (reader.Read()) {
+        switch (reader.NodeType) {
+            case XmlNodeType.Element:
+                xmlString += "<" + reader.Name;
+                for (int i = 0; i < reader.AttributeCount; i++) {
+                    reader.MoveToAttribute(i);
+                    xmlString += " " + reader.Name + "=" + reader.Value;
+                }
+
+                xmlString += ">\n";
+                break;
+            case XmlNodeType.Text:
+                xmlString += reader.Value + "\n";
+                break;
+            case XmlNodeType.EndElement:
+                xmlString += "</" + reader.Name;
+                for (int i = 0; i < reader.AttributeCount; i++) {
+                    reader.MoveToAttribute(i);
+                    xmlString += " " + reader.Name + "=" + reader.Value;
+                }
+                xmlString += ">\n";
+                break;
+        }
+    }
+
+    return xmlString;
+}

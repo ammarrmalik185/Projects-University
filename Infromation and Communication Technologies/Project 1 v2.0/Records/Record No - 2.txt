@@ -1,0 +1,5 @@
+Serial Number     = 2
+Model Name        = AK-47
+Manufacturer Name = abcd
+Gun Caliber       = ok
+Price             = ok

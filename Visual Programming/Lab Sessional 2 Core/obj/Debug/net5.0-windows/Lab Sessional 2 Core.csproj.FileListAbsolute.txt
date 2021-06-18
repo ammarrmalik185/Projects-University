@@ -1,0 +1,22 @@
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\bin\Debug\net5.0-windows\Lab Sessional 2 Core.exe
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\bin\Debug\net5.0-windows\Lab Sessional 2 Core.deps.json
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\bin\Debug\net5.0-windows\Lab Sessional 2 Core.runtimeconfig.json
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\bin\Debug\net5.0-windows\Lab Sessional 2 Core.runtimeconfig.dev.json
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\bin\Debug\net5.0-windows\Lab Sessional 2 Core.dll
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\bin\Debug\net5.0-windows\ref\Lab Sessional 2 Core.dll
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\bin\Debug\net5.0-windows\Lab Sessional 2 Core.pdb
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\obj\Debug\net5.0-windows\Lab Sessional 2 Core.csprojAssemblyReference.cache
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\obj\Debug\net5.0-windows\MainWindow.g.cs
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\obj\Debug\net5.0-windows\App.g.cs
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\obj\Debug\net5.0-windows\Lab Sessional 2 Core_MarkupCompile.cache
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\obj\Debug\net5.0-windows\Lab Sessional 2 Core_MarkupCompile.lref
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\obj\Debug\net5.0-windows\MainWindow.baml
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\obj\Debug\net5.0-windows\Lab Sessional 2 Core.g.resources
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\obj\Debug\net5.0-windows\Lab Sessional 2 Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\obj\Debug\net5.0-windows\Lab Sessional 2 Core.AssemblyInfoInputs.cache
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\obj\Debug\net5.0-windows\Lab Sessional 2 Core.AssemblyInfo.cs
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\obj\Debug\net5.0-windows\Lab Sessional 2 Core.csproj.CoreCompileInputs.cache
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\obj\Debug\net5.0-windows\Lab Sessional 2 Core.dll
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\obj\Debug\net5.0-windows\ref\Lab Sessional 2 Core.dll
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\obj\Debug\net5.0-windows\Lab Sessional 2 Core.pdb
+E:\Rider Projects\University\Visual Programming\Lab Sessional 2 Core\obj\Debug\net5.0-windows\Lab Sessional 2 Core.genruntimeconfig.cache

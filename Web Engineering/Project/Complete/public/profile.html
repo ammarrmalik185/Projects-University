@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Reddit</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Navigation-Clean.css">
+    <link rel="stylesheet" href="assets/css/Reddit-Login-Page.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean" style="background: rgb(0,0,0);">
+        <div class="container"><a class="navbar-brand" href="index.html" style="color: rgb(255,255,255);"><i class="fa fa-reddit" style="width: 28px;height: 31px;"></i>Reddit</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1" style="border-left-color: rgb(255,255,255);"><span class="sr-only">Toggle navigation</span><i class="fas fa-arrow-down" style="border-left-color: rgb(255,255,255);"></i></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" style="padding-right: 24px;color: rgb(0,0,0);"><input type="search" style="width: 258px;padding: 8px;padding-top: 2px;margin-top: 13px;border-radius: 12px;border-width: 0px;" placeholder="Search"><i class="fas fa-search" data-toggle="tooltip" data-bs-tooltip="" style="padding-left: 12px;color: rgb(255,255,255);" title="Search"></i></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tooltip" data-bs-tooltip="" href="index.html" style="color: rgb(255,255,255);" title="Navigate to home screen"><i class="fas fa-home"></i><br>Home</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tooltip" data-bs-tooltip="" href="create_new_subreddit.html" style="filter: brightness(200%);color: rgb(254,254,254);" title="Create New Subreddit"><i class="fa fa-star"></i><br>Create New Subreddit</a></li>
+                    <li class="nav-item"><a class="nav-link" data-toggle="tooltip" data-bs-tooltip="" href="create_new_post.html" style="color: rgb(255,255,255);" title="Create a new post"><i class="fas fa-pen"></i><br>New</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="color: rgb(255,255,255);"><img style="width: 36px;height: 36px;border-radius: 50%;" src="https://t4.ftcdn.net/jpg/03/46/93/61/360_F_346936114_RaxE6OQogebgAWTalE1myseY1Hbb5qPM.jpg"><span id="username">&nbsp; Username</span></a>
+                        <div class="dropdown-menu"><a class="dropdown-item" href="profile.html">Profile</a><a class="dropdown-item" href="settings.html">Settings</a><a class="dropdown-item" onclick="logout()">Logout</a></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div style="padding: 18px;padding-top: 42px;padding-bottom: 0px;"><img src="https://t4.ftcdn.net/jpg/03/46/93/61/360_F_346936114_RaxE6OQogebgAWTalE1myseY1Hbb5qPM.jpg" style="border-radius: 50%;width: 83px;"><span id="usernameTitle" style="font-size: 46px;height: 49px;padding-left: 24px;">u/testUser</span><span style="float: right;font-size: 28px;padding-right: 11px;">15.4k Karma</span>
+                        <p id="bio" style="padding-bottom: 0px;padding-top: 15px;">no bio<br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h1>Posts</h1>
+                    <ul id="posts-main" class="list-group">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
+    <script src="assets/js-project/firebaseConfig.js"></script>
+    <script src="assets/js-project/htmlTemplates.js"></script>
+    <script src="assets/js-project/indexMain.js"></script>
+    <script src="assets/js-project/postManagement.js"></script>
+    <script>addInfoToProfile()</script>
+</body>
+
+</html>

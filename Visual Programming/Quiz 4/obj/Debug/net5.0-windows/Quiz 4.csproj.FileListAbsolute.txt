@@ -1,0 +1,22 @@
+E:\Rider Projects\University\Visual Programming\Quiz 4\bin\Debug\net5.0-windows\Quiz 4.exe
+E:\Rider Projects\University\Visual Programming\Quiz 4\bin\Debug\net5.0-windows\Quiz 4.deps.json
+E:\Rider Projects\University\Visual Programming\Quiz 4\bin\Debug\net5.0-windows\Quiz 4.runtimeconfig.json
+E:\Rider Projects\University\Visual Programming\Quiz 4\bin\Debug\net5.0-windows\Quiz 4.runtimeconfig.dev.json
+E:\Rider Projects\University\Visual Programming\Quiz 4\bin\Debug\net5.0-windows\Quiz 4.dll
+E:\Rider Projects\University\Visual Programming\Quiz 4\bin\Debug\net5.0-windows\ref\Quiz 4.dll
+E:\Rider Projects\University\Visual Programming\Quiz 4\bin\Debug\net5.0-windows\Quiz 4.pdb
+E:\Rider Projects\University\Visual Programming\Quiz 4\obj\Debug\net5.0-windows\Quiz 4.csprojAssemblyReference.cache
+E:\Rider Projects\University\Visual Programming\Quiz 4\obj\Debug\net5.0-windows\MainWindow.g.cs
+E:\Rider Projects\University\Visual Programming\Quiz 4\obj\Debug\net5.0-windows\App.g.cs
+E:\Rider Projects\University\Visual Programming\Quiz 4\obj\Debug\net5.0-windows\Quiz 4_MarkupCompile.cache
+E:\Rider Projects\University\Visual Programming\Quiz 4\obj\Debug\net5.0-windows\Quiz 4_MarkupCompile.lref
+E:\Rider Projects\University\Visual Programming\Quiz 4\obj\Debug\net5.0-windows\MainWindow.baml
+E:\Rider Projects\University\Visual Programming\Quiz 4\obj\Debug\net5.0-windows\Quiz 4.g.resources
+E:\Rider Projects\University\Visual Programming\Quiz 4\obj\Debug\net5.0-windows\Quiz 4.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rider Projects\University\Visual Programming\Quiz 4\obj\Debug\net5.0-windows\Quiz 4.AssemblyInfoInputs.cache
+E:\Rider Projects\University\Visual Programming\Quiz 4\obj\Debug\net5.0-windows\Quiz 4.AssemblyInfo.cs
+E:\Rider Projects\University\Visual Programming\Quiz 4\obj\Debug\net5.0-windows\Quiz 4.csproj.CoreCompileInputs.cache
+E:\Rider Projects\University\Visual Programming\Quiz 4\obj\Debug\net5.0-windows\Quiz 4.dll
+E:\Rider Projects\University\Visual Programming\Quiz 4\obj\Debug\net5.0-windows\ref\Quiz 4.dll
+E:\Rider Projects\University\Visual Programming\Quiz 4\obj\Debug\net5.0-windows\Quiz 4.pdb
+E:\Rider Projects\University\Visual Programming\Quiz 4\obj\Debug\net5.0-windows\Quiz 4.genruntimeconfig.cache

@@ -1,0 +1,292 @@
+﻿<Window x:Class="VP_Project.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    xmlns:ui="clr-namespace:VP_Project.UI"
+    xmlns:settingsUi="clr-namespace:VP_Project.UI.Settings_UI"
+    mc:Ignorable="d"
+    Height="700" Width="1200"
+    WindowStyle="None"
+    ResizeMode="NoResize"
+    Background="Transparent"
+    AllowsTransparency="True"
+    Icon="Resources/Icons/mainIcon.png"
+    Title="Social Media Application">
+
+    <Border Background="#12254B" CornerRadius="10" BorderBrush="Black" BorderThickness="1">
+        <!-- Main Grid -->
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30px"></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition Height="20px"></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <!-- Message Display Overlay -->
+            <StackPanel 
+                Grid.RowSpan="3" 
+                VerticalAlignment="Bottom" 
+                x:Name="messageBox" 
+                Panel.ZIndex="3000" 
+                Visibility="Collapsed" 
+                HorizontalAlignment="Center" 
+                Margin="30px" 
+                Background="Black" 
+                Opacity=".7">
+                <Label x:Name="message" Margin="20px 10px" Foreground="White" FontSize="20px" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Default Message"/>
+            </StackPanel>
+           
+            
+            <!-- Account Management Overlay -->
+            <Grid Grid.Row="1" x:Name="accountManageOverlay" Panel.ZIndex="2000" Visibility="Collapsed">
+                <Grid.Background>
+                    <SolidColorBrush Color="Black" Opacity=".7"/>
+                </Grid.Background>
+                <StackPanel VerticalAlignment="Center">
+                    <settingsUi:account_settings_template/>
+                    <Button Click="buttonClick_Account_ManageClose" Height="Auto" Style="{StaticResource MaterialDesignRaisedAccentButton}" Width="100px" Margin="10px" Padding="5px" Content="Close"/>
+                </StackPanel>
+            </Grid>
+            
+            <!-- Delete User Confirmation Dialog -->
+            <Grid Grid.Row="1" x:Name="deleteUserOverlay" Panel.ZIndex="2000" Visibility="Collapsed">
+                <Grid.Background>
+                    <SolidColorBrush Color="Black" Opacity=".7"/>
+                </Grid.Background>
+                <StackPanel VerticalAlignment="Center">
+                    <Label FontSize="30" HorizontalAlignment="Center" Foreground="Red">Are you sure you want to delete your account?</Label>
+                    <Label FontSize="20" HorizontalAlignment="Center" Foreground="Red">Note: this will also delete all your posts</Label>
+                    <Button Background="Red" Click="buttonClick_Account_Delete" Height="Auto" Style="{StaticResource MaterialDesignRaisedAccentButton}" Width="100px" Margin="10px" Padding="5px" Content="DELETE USER"/>
+                    <Button Click="buttonClick_Account_DeleteClose" Height="Auto" Style="{StaticResource MaterialDesignRaisedAccentButton}" Width="100px" Margin="10px" Padding="5px" Content="Close"/>
+                </StackPanel>
+            </Grid>
+            
+            
+            <!-- Header -->
+            <StackPanel Grid.Row="0" Margin="5px" Orientation="Horizontal" HorizontalAlignment="Right"> 
+                <Button
+                    ToolTip="Minimize"
+                    Width="15px" Height="15px" Click="buttonClick_Function_MinimizeWindow"
+                    Style="{StaticResource MaterialDesignIconForegroundButton}">
+                    <materialDesign:PackIcon
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Kind="WindowMinimize"
+                        Foreground="White"
+                    />
+                </Button>
+                <Button
+                    ToolTip="Maximize"
+                    Width="20px" Height="20px" Click="buttonClick_Function_MaximizeWindow"
+                    Style="{StaticResource MaterialDesignIconForegroundButton}">
+                    <materialDesign:PackIcon
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Kind="WindowMaximize"
+                        Foreground="White"/>
+                </Button>
+                <Button
+                    ToolTip="Close"
+                    Width="15px" Height="15px" Click="buttonClick_Function_CloseWindow"
+                    Style="{StaticResource MaterialDesignIconForegroundButton}">
+                    <materialDesign:PackIcon
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Kind="close"
+                        Foreground="White"/>
+                </Button>
+            </StackPanel>
+            
+            <!-- Content Container -->
+            <materialDesign:DrawerHost Grid.Row="1" x:Name="DrawerHost">
+                <!-- Side Drawer Style -->
+                <materialDesign:DrawerHost.Style>
+                    <Style
+                        TargetType="materialDesign:DrawerHost">
+                        <Style.Triggers>
+                            <DataTrigger
+                                Binding="{Binding IsChecked, ElementName=BackgroundToggle}"
+                                Value="True">
+                                <Setter
+                                    Property="OverlayBackground"
+                                    Value="{DynamicResource PrimaryHueMidBrush}" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </materialDesign:DrawerHost.Style>
+                
+                <!-- Left Drawer UI -->
+                <materialDesign:DrawerHost.LeftDrawerContent>
+                    <Grid Margin="16">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition Height="Auto"></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Button 
+                            Height="40px"
+                            Command="{x:Static materialDesign:DrawerHost.CloseDrawerCommand}"
+                            CommandParameter="{x:Static Dock.Left}"
+                            Content="{materialDesign:PackIcon Kind=ArrowLeft, Size=35}"
+                            HorizontalAlignment="Right"
+                            Background="Transparent"
+                            BorderThickness="0"
+                            Foreground="#8333EC"
+                            />
+                        
+                        <!-- User data viewer -->
+                        <Button Grid.Row="1" Click="buttonClick_Account_Show" Background="Transparent" Height="auto" Width="auto" BorderBrush="Transparent">
+                            <Border Width="300px" Background="#7A25F0" CornerRadius="20">
+                                <Grid Height="auto" Margin="10px" >
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                        <RowDefinition Height="Auto"></RowDefinition>
+                                    </Grid.RowDefinitions>
+                                    
+                                    <Border Grid.Row="0" Margin="20px" VerticalAlignment="Center" HorizontalAlignment="Center" Width="100px" Height="100px" CornerRadius="100">
+                                        <Border.Background>
+                                            <ImageBrush x:Name="profilePicture" ImageSource="../../Resources/Defaults/profilePicture.jpg"/>
+                                        </Border.Background>
+                                    </Border>
+                                    <Label x:Name="FullName" Grid.Row="1" Foreground="White" FontSize="20" Content="Full name" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                    <Label x:Name="Username" Grid.Row="2" Foreground="White" FontSize="15" Content="username" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                    <Label x:Name="Email" Grid.Row="3" Foreground="White" FontSize="15" Content="email@email.com" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                                </Grid>
+                            </Border>
+                        </Button>
+                        <ListBox Grid.Row="2" Width="300px"
+                            IsEnabled="{Binding IsChecked, ElementName=EnableListBox}">
+                            <Button HorizontalAlignment="Stretch" Background="Transparent" BorderBrush="Transparent" Height="50px" Click="buttonClick_Account_ManageOpen">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Foreground="#7A25F0" Kind="Cog" VerticalAlignment="Center" Width="25px" Height="25px" />
+                                    <Label Foreground="#7A25F0" FontSize="20" VerticalAlignment="Center">Account Settings</Label>
+                                </StackPanel>
+                            </Button>
+                            <Button HorizontalAlignment="Stretch" Background="Transparent" BorderBrush="Transparent" Height="50px" Click="buttonClick_Account_DeleteOpen">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Foreground="#7A25F0" Kind="Delete" VerticalAlignment="Center" Width="25px" Height="25px" />
+                                    <Label Foreground="#7A25F0" FontSize="20" VerticalAlignment="Center">Delete User</Label>
+                                </StackPanel>
+                            </Button>
+                            <Button HorizontalAlignment="Stretch" Background="Transparent" BorderBrush="Transparent" Height="50px" Click="buttonClick_Function_Logout">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Foreground="#7A25F0" Kind="Logout" VerticalAlignment="Center" Width="25px" Height="25px" />
+                                    <Label Foreground="#7A25F0" FontSize="20" VerticalAlignment="Center">Logout</Label>
+                                </StackPanel>
+                            </Button>
+                            <Button HorizontalAlignment="Stretch" Background="Transparent" BorderBrush="Transparent" Height="50px" Click="buttonClick_Function_CloseWindow">
+                                <StackPanel Orientation="Horizontal">
+                                    <materialDesign:PackIcon Foreground="#7A25F0" Kind="Multiply" VerticalAlignment="Center" Width="25px" Height="25px" />
+                                    <Label Foreground="#7A25F0" FontSize="20" VerticalAlignment="Center">Exit</Label>
+                                </StackPanel>
+                            </Button>
+                        </ListBox>
+                    </Grid>
+                </materialDesign:DrawerHost.LeftDrawerContent>
+                
+                
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+                    <!-- Navigation bar -->
+                    
+                    <materialDesign:ColorZone  
+                        Grid.Row="0" 
+                        Mode="SecondaryMid" 
+                        Padding="16">
+                        <StackPanel
+                            Orientation="Horizontal">
+                            <ToggleButton
+                                ToolTip="Open navigation drawer"
+                                Click="buttonClick_Function_OpenDrawer"
+                                Style="{DynamicResource MaterialDesignHamburgerToggleButton}"
+                                Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}"
+                                CommandParameter="{x:Static Dock.Left}" />
+                            <TextBlock
+                                VerticalAlignment="Center"
+                                Margin="16 0 0 0"
+                                FontSize="25px"
+                                Text="Social Media Application" />
+                        </StackPanel>
+                    </materialDesign:ColorZone>
+                    
+                    
+                    <!-- Main Content Container -->
+                    
+                    <Grid Grid.Row="1">
+                        <TabControl
+                            SelectionChanged="tabChanged_Refresh_Tab"
+                            ContentTemplateSelector="{DynamicResource TabItemTemplateSelector}"
+                            Foreground="#56156B"
+                            Style="{StaticResource MaterialDesignNavigatilRailTabControl}">
+                            
+                            <TabItem
+                                ToolTip="News Feed"
+                                x:Name="newsFeedTab"
+                                Header="{materialDesign:PackIcon Kind=Newspaper, Size=24}"
+                                Style="{StaticResource MaterialDesignNavigationRailTabItem}">
+                                <Grid x:Name="newsFeedContainer">
+                                    <ui:post_tab_template PostDeleted="NewsFeed_OnPostDeleted" x:Name="newsFeed"/>
+                                </Grid>
+                            </TabItem>
+                            <TabItem
+                                ToolTip="Discover"
+                                x:Name="allPostsTab"
+                                Header="{materialDesign:PackIcon Kind=Store, Size=24}"
+                                Style="{StaticResource MaterialDesignNavigationRailTabItem}">
+                                <Grid x:Name="allPostsContainer">
+                                    <ui:post_tab_template PostDeleted="AllPosts_OnPostDeleted" x:Name="allPosts"/>
+                                </Grid>
+                            </TabItem>
+                            <TabItem
+                                ToolTip="Followed People"
+                                x:Name="followedPeopleTab"
+                                Header="{materialDesign:PackIcon Kind=AccountStar, Size=24}"
+                                Style="{StaticResource MaterialDesignNavigationRailTabItem}">
+                                <Grid x:Name="followedPeopleContainer">
+                                    <ui:people_tab_template x:Name="followedPeople"/>
+                                </Grid>
+                            </TabItem>
+                            <TabItem
+                                ToolTip="All People"
+                                x:Name="allPeopleTab"
+                                Header="{materialDesign:PackIcon Kind=AccountSearch, Size=24}"
+                                Style="{StaticResource MaterialDesignNavigationRailTabItem}">
+                                <Grid x:Name="allPeopleContainer">
+                                    <ui:people_tab_template x:Name="allPeople"/>
+                                </Grid>
+                            </TabItem>
+                            <TabItem
+                                ToolTip="Account"
+                                x:Name="profileViewTab"
+                                Header="{materialDesign:PackIcon Kind=AccountCircle, Size=24}"
+                                Style="{StaticResource MaterialDesignNavigationRailTabItem}">
+                                <Grid>
+                                    <ui:accountView_tab_template PostDeleted="AccountPosts_OnPostDeleted" x:Name="accountPosts"/>
+                                </Grid>
+                            </TabItem>
+                            <TabItem
+                                x:Name="newPostTab"
+                                Header="{materialDesign:PackIcon Kind=ShapeSquareRoundedPlus, Size=24}"
+                                ToolTip="Make New Post"
+                                Style="{StaticResource MaterialDesignNavigationRailTabItem}">
+                                <Grid>
+                                   <ui:newPost_tab_template/>
+                                </Grid>
+                            </TabItem>
+                        </TabControl>
+                    </Grid>
+                </Grid>
+            </materialDesign:DrawerHost>
+            
+            <!-- Footer -->
+            <Grid Grid.Row="2"></Grid>
+        </Grid>
+    </Border>
+</Window>

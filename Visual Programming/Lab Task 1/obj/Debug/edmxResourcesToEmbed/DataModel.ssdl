@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="DatabaseModel2.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Course">
+    <Key>
+      <PropertyRef Name="CourseCode" />
+    </Key>
+    <Property Name="Title" Type="nchar" MaxLength="10" Nullable="false" />
+    <Property Name="CourseCode" Type="varchar" MaxLength="6" Nullable="false" />
+    <Property Name="Discription" Type="nchar" MaxLength="10" />
+    <Property Name="hasLab" Type="bit" Nullable="false" />
+    <Property Name="CreditHours" Type="int" />
+  </EntityType>
+  <EntityType Name="EnrolledIn">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="StudentID" Type="int" />
+    <Property Name="CourseID" Type="varchar" MaxLength="6" />
+    <Property Name="TeacherID" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Student">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="RegNo" Type="varchar" MaxLength="12" />
+    <Property Name="DateOfBirth" Type="datetime" />
+    <Property Name="SemisterNo" Type="int" />
+    <Property Name="Program" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Teacher">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" MaxLength="50" />
+    <Property Name="Specilization" Type="varchar" MaxLength="50" />
+    <Property Name="Qualification" Type="varchar" MaxLength="50" />
+    <Property Name="DateOfBirth" Type="date" />
+  </EntityType>
+  <Association Name="linkToCourse">
+    <End Role="Course" Type="Self.Course" Multiplicity="0..1" />
+    <End Role="EnrolledIn" Type="Self.EnrolledIn" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Course">
+        <PropertyRef Name="CourseCode" />
+      </Principal>
+      <Dependent Role="EnrolledIn">
+        <PropertyRef Name="CourseID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="linkToStudent">
+    <End Role="Student" Type="Self.Student" Multiplicity="0..1" />
+    <End Role="EnrolledIn" Type="Self.EnrolledIn" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Student">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EnrolledIn">
+        <PropertyRef Name="StudentID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="linkToTeacher">
+    <End Role="Teacher" Type="Self.Teacher" Multiplicity="1" />
+    <End Role="EnrolledIn" Type="Self.EnrolledIn" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Teacher">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="EnrolledIn">
+        <PropertyRef Name="TeacherID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="DatabaseModel2StoreContainer">
+    <EntitySet Name="Course" EntityType="Self.Course" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="EnrolledIn" EntityType="Self.EnrolledIn" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Student" EntityType="Self.Student" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Teacher" EntityType="Self.Teacher" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="linkToCourse" Association="Self.linkToCourse">
+      <End Role="Course" EntitySet="Course" />
+      <End Role="EnrolledIn" EntitySet="EnrolledIn" />
+    </AssociationSet>
+    <AssociationSet Name="linkToStudent" Association="Self.linkToStudent">
+      <End Role="Student" EntitySet="Student" />
+      <End Role="EnrolledIn" EntitySet="EnrolledIn" />
+    </AssociationSet>
+    <AssociationSet Name="linkToTeacher" Association="Self.linkToTeacher">
+      <End Role="Teacher" EntitySet="Teacher" />
+      <End Role="EnrolledIn" EntitySet="EnrolledIn" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

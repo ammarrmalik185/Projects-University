@@ -1,0 +1,82 @@
+﻿<StackPanel 
+    x:Class="VP_Project.UI.post_UIs.post_template_header"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    mc:Ignorable="d"
+    Width="900"
+    Orientation="Horizontal" d:DataContext="{d:DesignData User |(in VP_Project.Scripts.DataStructures)}">
+    <StackPanel.Resources>
+        <Style x:Key="selfPostButtonVisibilityChanger" TargetType="Button" BasedOn="{StaticResource MaterialDesignRaisedAccentButton}">
+            <Setter Property="Visibility" Value="Collapsed"/>
+            <Style.Triggers>
+                <DataTrigger Binding="{Binding isPosterSelf}" Value="True">
+                    <Setter Property="Button.Visibility" Value="Visible"/>
+                </DataTrigger>
+            </Style.Triggers>
+        </Style>
+    </StackPanel.Resources>
+    
+    <Button ToolTip="Go to Profile" Click="buttonClick_Post_DisplayUser" Height="Auto" Width="Auto" Background="Transparent" BorderBrush="Transparent">
+        <StackPanel Orientation="Horizontal">
+            <Border HorizontalAlignment="Left" Width="50px" Height="50px" CornerRadius="100">
+                <Border.Background>
+                    <ImageBrush ImageSource="{Binding posterProfilePicture}"/>
+                </Border.Background>
+            </Border>
+            <StackPanel VerticalAlignment="Center">
+                <Label
+                    Margin="10px 0px"
+                    Foreground="White"
+                    FontSize="20"
+                    VerticalAlignment="Center"
+                    Content="{Binding PosterName}"/>
+                <Label
+                    Margin="10px 0px"
+                    Foreground="White"
+                    FontSize="10"
+                    VerticalAlignment="Center"
+                    Content="{Binding DatePosted}"/>
+            </StackPanel>
+        </StackPanel>
+    </Button>
+    
+    <Button Click="buttonClick_User_Follow" Background="Transparent" HorizontalAlignment="Right" BorderBrush="Transparent" Height="auto">
+        <Button.Style>
+            <Style TargetType="Button" BasedOn="{StaticResource MaterialDesignRaisedAccentButton}">
+                <Setter Property="ToolTip" Value="Follow"></Setter>
+                <Style.Triggers>
+                    <DataTrigger Binding="{Binding isPosterFollowed}" Value="True">
+                        <Setter Property="Button.Foreground" Value="Green"/>
+                        <Setter Property="Button.ToolTip" Value="Unfollow"/>
+                    </DataTrigger>
+                </Style.Triggers>
+            </Style>
+        </Button.Style>
+        <materialDesign:PackIcon Kind="AccountPlus" Width="30px" Height="30px" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Button>
+    
+    <Button 
+        Style="{StaticResource selfPostButtonVisibilityChanger}"
+        ToolTip="Edit Post" 
+        Click="buttonClick_User_Edit" 
+        Background="Transparent" 
+        HorizontalAlignment="Right" 
+        BorderBrush="Transparent" 
+        Height="auto">
+        <materialDesign:PackIcon Kind="Pencil" Width="30px" Height="30px" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Button>
+    
+    <Button 
+        Style="{StaticResource selfPostButtonVisibilityChanger}"
+        ToolTip="Delete Post" 
+        Click="buttonClick_User_Delete" 
+        Background="Transparent" 
+        HorizontalAlignment="Right" 
+        BorderBrush="Transparent" 
+        Height="auto">
+        <materialDesign:PackIcon Kind="Delete" Width="30px" Height="30px" HorizontalAlignment="Center" VerticalAlignment="Center" />
+    </Button>
+</StackPanel>

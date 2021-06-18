@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/contentModel.xml
+/modules.xml
+/projectSettingsUpdater.xml
+/.idea.Lab 5 - WPF.iml
+# Datasource local storage ignored files
+/../../../../../../../../:\Rider Projects\University\Visual Programming\Lab 5 - WPF\.idea\.idea.Lab 5 - WPF\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

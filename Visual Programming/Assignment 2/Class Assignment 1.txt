@@ -1,0 +1,473 @@
+// Name: Ammar Rashid Malik
+// Reg no: FA18-BSE-011
+// Class: BSSE-6A
+
+//
+//
+// part 1
+//
+//
+
+using System;
+
+namespace Assignment_2 {
+    class Part_1 {
+        static void Main(string[] args) {
+        }
+    }
+
+    class Customer {
+        private int customerId;
+        private string lastName;
+        private string firstName;
+        private string street;
+        private string city;
+        private string state;
+        private int zipcode;
+        private string phoneNo;
+        private string email;
+        private string password;
+
+        public Customer(int customerId, string lastName, string firstName, string street, string city, string state, int zipcode, string phoneNo, string email, string password) {
+            this.customerId = customerId;
+            this.lastName = lastName;
+            this.firstName = firstName;
+            this.street = street;
+            this.city = city;
+            this.state = state;
+            this.zipcode = zipcode;
+            this.phoneNo = phoneNo;
+            this.email = email;
+            this.password = password;
+        }
+
+        public Customer() {
+        }
+
+        public int CustomerId {
+            get => customerId;
+            set => customerId = value;
+        }
+
+        public string LastName {
+            get => lastName;
+            set => lastName = value;
+        }
+
+        public string FirstName {
+            get => firstName;
+            set => firstName = value;
+        }
+
+        public string Street {
+            get => street;
+            set => street = value;
+        }
+
+        public string City {
+            get => city;
+            set => city = value;
+        }
+
+        public string State {
+            get => state;
+            set => state = value;
+        }
+
+        public int Zipcode {
+            get => zipcode;
+            set => zipcode = value;
+        }
+
+        public string PhoneNo {
+            get => phoneNo;
+            set => phoneNo = value;
+        }
+
+        public string Email {
+            get => email;
+            set => email = value;
+        }
+
+        public string Password {
+            get => password;
+            set => password = value;
+        }
+    }
+
+    class RetailCustomer : Customer {
+        private string creditCardType;
+        private string creditCardNo;
+
+        public RetailCustomer() {
+        }
+
+        public RetailCustomer(int customerId, string lastName, string firstName, string street, string city, string state, int zipcode, string phoneNo, string email, string password, string creditCardType, string creditCardNo) : base(customerId, lastName, firstName, street, city, state, zipcode, phoneNo, email, password) {
+            this.creditCardType = creditCardType;
+            this.creditCardNo = creditCardNo;
+        }
+
+        public string CreditCardType {
+            get => creditCardType;
+            set => creditCardType = value;
+        }
+
+        public string CreditCardNo {
+            get => creditCardNo;
+            set => creditCardNo = value;
+        }
+    }
+
+    class CorporateCustomer : Customer {
+        private string companyName;
+        private string frequentFlyerPts;
+        private string billingAccountNo;
+
+        public CorporateCustomer() {
+        }
+
+        public CorporateCustomer(int customerId, string lastName, string firstName, string street, string city, string state, int zipcode, string phoneNo, string email, string password, string companyName, string frequentFlyerPts, string billingAccountNo) : base(customerId, lastName, firstName, street, city, state, zipcode, phoneNo, email, password) {
+            this.companyName = companyName;
+            this.frequentFlyerPts = frequentFlyerPts;
+            this.billingAccountNo = billingAccountNo;
+        }
+
+        public string CompanyName {
+            get => companyName;
+            set => companyName = value;
+        }
+
+        public string FrequentFlyerPts {
+            get => frequentFlyerPts;
+            set => frequentFlyerPts = value;
+        }
+
+        public string BillingAccountNo {
+            get => billingAccountNo;
+            set => billingAccountNo = value;
+        }
+    }
+
+    class Reservation {
+        private int reservationNo;
+        private DateTime date;
+
+        public Reservation() {
+        }
+
+        public Reservation(int reservationNo, DateTime date) {
+            this.reservationNo = reservationNo;
+            this.date = date;
+        }
+    }
+
+    class Seat {
+        private int rowNo;
+        private int seatNo;
+        private int price;
+        private string status;
+
+        public Seat() {
+        }
+
+        public Seat(int rowNo, int seatNo, int price, string status) {
+            this.rowNo = rowNo;
+            this.seatNo = seatNo;
+            this.price = price;
+            this.status = status;
+        }
+
+        public int RowNo {
+            get => rowNo;
+            set => rowNo = value;
+        }
+
+        public int SeatNo {
+            get => seatNo;
+            set => seatNo = value;
+        }
+
+        public int Price {
+            get => price;
+            set => price = value;
+        }
+
+        public string Status {
+            get => status;
+            set => status = value;
+        }
+    }
+
+    class Flight {
+        private int flightId;
+        private DateTime date;
+        private string origin;
+        private string destination;
+        private DateTime departureTime;
+        private DateTime arrivalTime;
+        private int seatingCapacity;
+
+        public Flight() {
+        }
+
+        public Flight(int flightId, DateTime date, string origin, string destination, DateTime departureTime, DateTime arrivalTime, int seatingCapacity) {
+            this.flightId = flightId;
+            this.date = date;
+            this.origin = origin;
+            this.destination = destination;
+            this.departureTime = departureTime;
+            this.arrivalTime = arrivalTime;
+            this.seatingCapacity = seatingCapacity;
+        }
+
+        public int FlightId {
+            get => flightId;
+            set => flightId = value;
+        }
+
+        public DateTime Date {
+            get => date;
+            set => date = value;
+        }
+
+        public string Origin {
+            get => origin;
+            set => origin = value;
+        }
+
+        public string Destination {
+            get => destination;
+            set => destination = value;
+        }
+
+        public DateTime DepartureTime {
+            get => departureTime;
+            set => departureTime = value;
+        }
+
+        public DateTime ArrivalTime {
+            get => arrivalTime;
+            set => arrivalTime = value;
+        }
+
+        public int SeatingCapacity {
+            get => seatingCapacity;
+            set => seatingCapacity = value;
+        }
+    }
+    
+   
+}
+
+
+
+//
+//
+// part 2
+//
+//
+
+using System;
+
+namespace Assignment_2 {
+    public class Part_2 {
+        
+    }
+
+    class Employee {
+        private int employeeId;
+        private string loginName;
+        private string password;
+        private string department;
+        private string firstName;
+        private string lastName;
+
+        public Employee() {
+        }
+
+        public Employee(int employeeId, string loginName, string password, string department, string firstName, string lastName) {
+            this.employeeId = employeeId;
+            this.loginName = loginName;
+            this.password = password;
+            this.department = department;
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+
+        public void Login() {
+        }
+
+        public int EmployeeId {
+            get => employeeId;
+            set => employeeId = value;
+        }
+
+        public string LoginName {
+            get => loginName;
+            set => loginName = value;
+        }
+
+        public string Password {
+            get => password;
+            set => password = value;
+        }
+
+        public string Department {
+            get => department;
+            set => department = value;
+        }
+
+        public string FirstName {
+            get => firstName;
+            set => firstName = value;
+        }
+
+        public string LastName {
+            get => lastName;
+            set => lastName = value;
+        }
+    }
+
+    class DepartmentManager : Employee {
+        
+        public DepartmentManager() {
+        }
+
+        public DepartmentManager(int employeeId, string loginName, string password, string department, string firstName, string lastName) : base(employeeId, loginName, password, department, firstName, lastName) {
+        }
+
+        public void ApprovePurchase() {
+        }
+    }
+
+    class Order {
+        private long orderNo;
+        private DateTime orderDate;
+        private string status;
+
+        public Order() {
+        }
+
+        public Order(long orderNo, DateTime orderDate, string status) {
+            this.orderNo = orderNo;
+            this.orderDate = orderDate;
+            this.status = status;
+        }
+
+        public void AddItem() {
+        }
+
+        public void RemoveItem() {
+        }
+
+        public void SubmitOrder() {
+        }
+
+        public long OrderNo {
+            get => orderNo;
+            set => orderNo = value;
+        }
+
+        public DateTime OrderDate {
+            get => orderDate;
+            set => orderDate = value;
+        }
+
+        public string Status {
+            get => status;
+            set => status = value;
+        }
+    }
+
+    class OrderItem {
+        private string productNo;
+        private int quantity;
+        private int unitPrice; // no idea what "Real" datatype is
+
+        public OrderItem() {
+        }
+
+        public OrderItem(string productNo, int quantity, int unitPrice) {
+            this.productNo = productNo;
+            this.quantity = quantity;
+            this.unitPrice = unitPrice;
+        }
+
+        public string ProductNo {
+            get => productNo;
+            set => productNo = value;
+        }
+
+        public int Quantity {
+            get => quantity;
+            set => quantity = value;
+        }
+
+        public int UnitPrice {
+            get => unitPrice;
+            set => unitPrice = value;
+        }
+    }
+    
+
+    class Product {
+        private string productNo;
+        private string productName;
+        private string category;
+        private string description;
+        private int unitPrice; // no idea what "Real" datatype is (again)
+        private string vendorCode;
+
+        public Product() {
+        }
+
+        public Product(string productNo, string productName, string category, string description, int unitPrice, string vendorCode) {
+            this.productNo = productNo;
+            this.productName = productName;
+            this.category = category;
+            this.description = description;
+            this.unitPrice = unitPrice;
+            this.vendorCode = vendorCode;
+        }
+
+        public string ProductNo {
+            get => productNo;
+            set => productNo = value;
+        }
+
+        public string ProductName {
+            get => productName;
+            set => productName = value;
+        }
+
+        public string Category {
+            get => category;
+            set => category = value;
+        }
+
+        public string Description {
+            get => description;
+            set => description = value;
+        }
+
+        public int UnitPrice {
+            get => unitPrice;
+            set => unitPrice = value;
+        }
+
+        public string VendorCode {
+            get => vendorCode;
+            set => vendorCode = value;
+        }
+    }
+
+    class ProductCatalog {
+
+        public void ListCategorizes() {
+        }
+
+        public void ListProducts() {
+        }
+        
+    }
+}

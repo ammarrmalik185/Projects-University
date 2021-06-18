@@ -1,0 +1,53 @@
+body{
+    text-align: center;
+    font-family: Calibri, serif;
+    color: darkgreen;
+}
+#mainForm{
+    background-color: lightgray;
+    border: black solid 1px;
+    width: 80%;
+    text-align: left;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 60px;
+    background-image: url("pic.png");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+#mainForm .firstColumn{
+    width: 400px;
+}
+#mainForm{
+    padding: 50px;
+}
+#mainForm *{
+    padding: 15px;
+}
+#mainForm h1{
+    font-size: 50px;
+}
+#mainForm button{
+    background: darkgreen;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+#mainForm hr{
+    padding: 0;
+}
+#forumHeader .oneHalf{
+    margin: 0;
+    padding: 0;
+    width: fit-content;
+    display: inline-block;
+}
+#forumHeader .leftHalf{
+    width: 70%;
+}
+.centerAligned{
+    text-align: center;
+}
+span{
+    margin-right: 100px;
+}
+

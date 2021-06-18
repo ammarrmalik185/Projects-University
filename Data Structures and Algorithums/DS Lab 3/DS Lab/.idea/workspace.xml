@@ -1,0 +1,585 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="DS_Lab" targetName="DS_Lab" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ee4dfae2-d40e-4acd-991e-916bfa474689" name="Default Changelist" comment="" />
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="233" lean-forward="true" selection-start-line="233" selection-end-line="233" />
+              <folding>
+                <element signature="e#1#20#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SingleLinkedList.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="271" selection-start-line="271" selection-end-line="271" />
+              <folding>
+                <element signature="e#368#427#0" />
+                <element signature="e#434#604#0" />
+                <element signature="e#611#861#0" />
+                <element signature="e#868#1318#0" />
+                <element signature="e#1325#2008#0" />
+                <element signature="e#2015#2436#0" />
+                <element signature="e#2442#2509#0" />
+                <element signature="e#2515#2813#0" />
+                <element signature="e#2896#3257#0" />
+                <element signature="e#3263#3328#0" />
+                <element signature="e#3334#3800#0" />
+                <element signature="e#3806#3861#0" />
+                <element signature="e#3867#4430#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/LinkedList.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3281">
+              <caret line="193" column="19" selection-start-line="193" selection-start-column="19" selection-end-line="193" selection-end-column="19" />
+              <folding>
+                <element signature="e#225#268#0" />
+                <element signature="e#271#398#0" />
+                <element signature="e#401#569#0" />
+                <element signature="e#572#787#0" />
+                <element signature="e#790#1119#0" />
+                <element signature="e#1122#1359#0" />
+                <element signature="e#1362#1645#0" />
+                <element signature="e#1648#1973#0" />
+                <element signature="e#1976#2171#0" />
+                <element signature="e#2174#2498#0" />
+                <element signature="e#2501#2924#0" />
+                <element signature="e#2927#3274#0" />
+                <element signature="e#3279#4362#0" />
+                <element signature="e#4365#4467#0" />
+                <element signature="e#4470#4609#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assignment 1.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
+              <folding>
+                <element signature="e#1#20#0" expanded="true" />
+                <element signature="e#332#391#0" />
+                <element signature="e#398#568#0" />
+                <element signature="e#575#825#0" />
+                <element signature="e#832#1282#0" />
+                <element signature="e#1289#1730#0" />
+                <element signature="e#1737#2420#0" />
+                <element signature="e#2427#2848#0" />
+                <element signature="e#2855#3255#0" />
+                <element signature="e#3262#4049#0" />
+                <element signature="e#4056#4844#0" />
+                <element signature="e#4851#5336#0" />
+                <element signature="e#5343#7588#0" />
+                <element signature="e#7595#7899#0" />
+                <element signature="e#7906#8684#0" />
+                <element signature="e#8690#8834#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tree.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4658">
+              <caret line="274" selection-start-line="274" selection-end-line="274" />
+              <folding>
+                <element signature="e#404#489#0" />
+                <element signature="e#495#549#0" />
+                <element signature="e#555#1143#0" />
+                <element signature="e#1149#1682#0" />
+                <element signature="e#1688#1743#0" />
+                <element signature="e#1749#2372#0" />
+                <element signature="e#2378#5206#0" />
+                <element signature="e#5212#5268#0" />
+                <element signature="e#5274#5484#0" />
+                <element signature="e#5490#5544#0" />
+                <element signature="e#5550#5720#0" />
+                <element signature="e#5726#5800#0" />
+                <element signature="e#5806#5997#0" />
+                <element signature="e#6003#6121#0" />
+                <element signature="e#6127#6492#0" />
+                <element signature="e#6498#6566#0" />
+                <element signature="e#6572#6972#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BinaryTree.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1989">
+              <caret line="117" selection-start-line="117" selection-end-line="117" />
+              <folding>
+                <element signature="e#238#1756#1" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lab Task 1.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="544">
+              <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+              <folding>
+                <element signature="e#205#291#0" />
+                <element signature="e#297#352#0" />
+                <element signature="e#358#719#0" />
+                <element signature="e#725#1034#0" />
+                <element signature="e#1040#1357#0" />
+                <element signature="e#1363#1951#0" />
+                <element signature="e#1957#2457#0" />
+                <element signature="e#2463#2789#0" />
+                <element signature="e#2795#3950#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lab Task 2 aseed.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7089">
+              <caret line="417" column="2" selection-start-line="417" selection-start-column="2" selection-end-line="417" selection-end-column="2" />
+              <folding>
+                <element signature="e#291#343#0" />
+                <element signature="e#348#674#0" />
+                <element signature="e#679#1040#0" />
+                <element signature="e#1045#2184#0" />
+                <element signature="e#2189#3256#0" />
+                <element signature="e#3261#3534#0" />
+                <element signature="e#3539#3919#0" />
+                <element signature="e#3924#4285#0" />
+                <element signature="e#4290#4858#0" />
+                <element signature="e#4863#5474#0" />
+                <element signature="e#5479#6333#0" />
+                <element signature="e#6338#13786#0" />
+                <element signature="e#13791#14324#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>array</find>
+      <find>first</find>
+      <find>nullptr</find>
+      <find>auto</find>
+      <find>NULL</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>list</replace>
+      <replace>start</replace>
+      <replace>NULL</replace>
+      <replace>ListNode</replace>
+      <replace>nullptr</replace>
+    </replaceStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/main.cpp" root0="SKIP_INSPECTION" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assignment 2.cpp" />
+        <option value="$PROJECT_DIR$/Lab Task 2.cpp" />
+        <option value="$PROJECT_DIR$/Lab Task 1.cpp" />
+        <option value="$PROJECT_DIR$/BinaryTree.cpp" />
+        <option value="$PROJECT_DIR$/Lab Task 2 aseed.cpp" />
+        <option value="$PROJECT_DIR$/Tree.cpp" />
+        <option value="$PROJECT_DIR$/Assignment 1.cpp" />
+        <option value="$PROJECT_DIR$/LinkedList.cpp" />
+        <option value="$PROJECT_DIR$/SingleLinkedList.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+      </list>
+    </option>
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-46" />
+    <option name="y" value="112" />
+    <option name="width" value="1300" />
+    <option name="height" value="688" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DS_Lab" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DS Lab" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\ClionProjects\DS Lab" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="DS_Lab" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="DS_Lab" TARGET_NAME="DS_Lab" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="DS_Lab" RUN_TARGET_NAME="DS_Lab">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\ParadoX\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ee4dfae2-d40e-4acd-991e-916bfa474689" name="Default Changelist" comment="" />
+      <created>1568703398012</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568703398012</updated>
+      <workItem from="1568703413595" duration="7341000" />
+      <workItem from="1569746663988" duration="3357000" />
+      <workItem from="1569840011786" duration="14098000" />
+      <workItem from="1569928351738" duration="2641000" />
+      <workItem from="1570205153753" duration="5164000" />
+      <workItem from="1570210492184" duration="1546000" />
+      <workItem from="1570262343892" duration="672000" />
+      <workItem from="1570273624887" duration="3878000" />
+      <workItem from="1570294249995" duration="3523000" />
+      <workItem from="1570535360365" duration="101000" />
+      <workItem from="1575356579389" duration="9007000" />
+      <workItem from="1576569128079" duration="131000" />
+      <workItem from="1576842203521" duration="1135000" />
+      <workItem from="1576911723436" duration="648000" />
+      <workItem from="1577358713068" duration="4834000" />
+      <workItem from="1577764315871" duration="1726000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="59802000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3161876" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.43207857" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.35679215" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.66121113" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3289689" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50075644" side_tool="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Version Control" order="11" />
+      <window_info anchor="bottom" id="CMake" order="12" weight="0.3289689" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="LuaJ" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main aseed.cpp" />
+    <entry file="file://$PROJECT_DIR$/Assignment 2.cpp" />
+    <entry file="file://$APPLICATION_HOME_DIR$/MinGW/mingw32/lib/gcc/i686-w64-mingw32/8.1.0/include/c++/bits/stringfwd.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="73" column="32" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab Task 2.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="319" column="16" selection-start-line="319" selection-start-column="16" selection-end-line="319" selection-end-column="16" />
+          <folding>
+            <element signature="e#1#20#0" expanded="true" />
+            <element signature="e#271#381#0" />
+            <element signature="e#387#443#0" />
+            <element signature="e#449#784#0" />
+            <element signature="e#790#1127#0" />
+            <element signature="e#1133#1373#0" />
+            <element signature="e#1379#1820#0" />
+            <element signature="e#1826#2258#0" />
+            <element signature="e#2264#2431#0" />
+            <element signature="e#2437#2757#0" />
+            <element signature="e#2763#3616#0" />
+            <element signature="e#3622#4443#0" />
+            <element signature="e#4449#4872#0" />
+            <element signature="e#4878#5349#0" />
+            <element signature="e#5355#5911#0" />
+            <element signature="e#13828#14600#0" />
+            <element signature="e#14606#14773#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LinkedList.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3281">
+          <caret line="193" column="19" selection-start-line="193" selection-start-column="19" selection-end-line="193" selection-end-column="19" />
+          <folding>
+            <element signature="e#225#268#0" />
+            <element signature="e#271#398#0" />
+            <element signature="e#401#569#0" />
+            <element signature="e#572#787#0" />
+            <element signature="e#790#1119#0" />
+            <element signature="e#1122#1359#0" />
+            <element signature="e#1362#1645#0" />
+            <element signature="e#1648#1973#0" />
+            <element signature="e#1976#2171#0" />
+            <element signature="e#2174#2498#0" />
+            <element signature="e#2501#2924#0" />
+            <element signature="e#2927#3274#0" />
+            <element signature="e#3279#4362#0" />
+            <element signature="e#4365#4467#0" />
+            <element signature="e#4470#4609#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assignment 1.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#1#20#0" expanded="true" />
+            <element signature="e#332#391#0" />
+            <element signature="e#398#568#0" />
+            <element signature="e#575#825#0" />
+            <element signature="e#832#1282#0" />
+            <element signature="e#1289#1730#0" />
+            <element signature="e#1737#2420#0" />
+            <element signature="e#2427#2848#0" />
+            <element signature="e#2855#3255#0" />
+            <element signature="e#3262#4049#0" />
+            <element signature="e#4056#4844#0" />
+            <element signature="e#4851#5336#0" />
+            <element signature="e#5343#7588#0" />
+            <element signature="e#7595#7899#0" />
+            <element signature="e#7906#8684#0" />
+            <element signature="e#8690#8834#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tree.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4658">
+          <caret line="274" selection-start-line="274" selection-end-line="274" />
+          <folding>
+            <element signature="e#404#489#0" />
+            <element signature="e#495#549#0" />
+            <element signature="e#555#1143#0" />
+            <element signature="e#1149#1682#0" />
+            <element signature="e#1688#1743#0" />
+            <element signature="e#1749#2372#0" />
+            <element signature="e#2378#5206#0" />
+            <element signature="e#5212#5268#0" />
+            <element signature="e#5274#5484#0" />
+            <element signature="e#5490#5544#0" />
+            <element signature="e#5550#5720#0" />
+            <element signature="e#5726#5800#0" />
+            <element signature="e#5806#5997#0" />
+            <element signature="e#6003#6121#0" />
+            <element signature="e#6127#6492#0" />
+            <element signature="e#6498#6566#0" />
+            <element signature="e#6572#6972#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BinaryTree.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1989">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+          <folding>
+            <element signature="e#238#1756#1" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab Task 1.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="33" selection-start-line="32" selection-start-column="33" selection-end-line="32" selection-end-column="33" />
+          <folding>
+            <element signature="e#205#291#0" />
+            <element signature="e#297#352#0" />
+            <element signature="e#358#719#0" />
+            <element signature="e#725#1034#0" />
+            <element signature="e#1040#1357#0" />
+            <element signature="e#1363#1951#0" />
+            <element signature="e#1957#2457#0" />
+            <element signature="e#2463#2789#0" />
+            <element signature="e#2795#3950#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab Task 2 aseed.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7089">
+          <caret line="417" column="2" selection-start-line="417" selection-start-column="2" selection-end-line="417" selection-end-column="2" />
+          <folding>
+            <element signature="e#291#343#0" />
+            <element signature="e#348#674#0" />
+            <element signature="e#679#1040#0" />
+            <element signature="e#1045#2184#0" />
+            <element signature="e#2189#3256#0" />
+            <element signature="e#3261#3534#0" />
+            <element signature="e#3539#3919#0" />
+            <element signature="e#3924#4285#0" />
+            <element signature="e#4290#4858#0" />
+            <element signature="e#4863#5474#0" />
+            <element signature="e#5479#6333#0" />
+            <element signature="e#6338#13786#0" />
+            <element signature="e#13791#14324#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SingleLinkedList.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="271" selection-start-line="271" selection-end-line="271" />
+          <folding>
+            <element signature="e#368#427#0" />
+            <element signature="e#434#604#0" />
+            <element signature="e#611#861#0" />
+            <element signature="e#868#1318#0" />
+            <element signature="e#1325#2008#0" />
+            <element signature="e#2015#2436#0" />
+            <element signature="e#2442#2509#0" />
+            <element signature="e#2515#2813#0" />
+            <element signature="e#2896#3257#0" />
+            <element signature="e#3263#3328#0" />
+            <element signature="e#3334#3800#0" />
+            <element signature="e#3806#3861#0" />
+            <element signature="e#3867#4430#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="233" lean-forward="true" selection-start-line="233" selection-end-line="233" />
+          <folding>
+            <element signature="e#1#20#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

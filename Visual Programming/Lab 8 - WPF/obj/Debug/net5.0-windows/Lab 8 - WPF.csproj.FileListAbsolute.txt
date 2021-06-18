@@ -1,0 +1,21 @@
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\bin\Debug\net5.0-windows\Lab 8 - WPF.exe
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\bin\Debug\net5.0-windows\Lab 8 - WPF.deps.json
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\bin\Debug\net5.0-windows\Lab 8 - WPF.runtimeconfig.json
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\bin\Debug\net5.0-windows\Lab 8 - WPF.runtimeconfig.dev.json
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\bin\Debug\net5.0-windows\Lab 8 - WPF.dll
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\bin\Debug\net5.0-windows\ref\Lab 8 - WPF.dll
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\bin\Debug\net5.0-windows\Lab 8 - WPF.pdb
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\obj\Debug\net5.0-windows\Lab 8 - WPF.csprojAssemblyReference.cache
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\obj\Debug\net5.0-windows\MainWindow.baml
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\obj\Debug\net5.0-windows\MainWindow.g.cs
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\obj\Debug\net5.0-windows\App.g.cs
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\obj\Debug\net5.0-windows\Lab 8 - WPF_MarkupCompile.cache
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\obj\Debug\net5.0-windows\Lab 8 - WPF.g.resources
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\obj\Debug\net5.0-windows\Lab 8 - WPF.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\obj\Debug\net5.0-windows\Lab 8 - WPF.AssemblyInfoInputs.cache
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\obj\Debug\net5.0-windows\Lab 8 - WPF.AssemblyInfo.cs
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\obj\Debug\net5.0-windows\Lab 8 - WPF.csproj.CoreCompileInputs.cache
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\obj\Debug\net5.0-windows\Lab 8 - WPF.dll
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\obj\Debug\net5.0-windows\ref\Lab 8 - WPF.dll
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\obj\Debug\net5.0-windows\Lab 8 - WPF.pdb
+E:\Rider Projects\University\Visual Programming\Lab 8 - WPF\obj\Debug\net5.0-windows\Lab 8 - WPF.genruntimeconfig.cache

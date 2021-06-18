@@ -1,0 +1,59 @@
+﻿<Grid
+    x:Class="VP_Project.UI.newPost_tab_template"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    mc:Ignorable="d"
+    MinHeight="450" MinWidth="800"
+    Background="White">
+
+    <Grid x:Name="progressOverlay" Panel.ZIndex="1000" Visibility="Collapsed">
+        <Grid.Background>
+            <SolidColorBrush Color="Black" Opacity=".7"/>
+        </Grid.Background>
+        <StackPanel VerticalAlignment="Center">
+            <ProgressBar
+                Foreground="White"
+                Style="{DynamicResource MaterialDesignCircularProgressBar}"
+                Height="100px"
+                Width="100px"
+                HorizontalAlignment="Center"
+                Margin="16"
+                IsIndeterminate="True"
+                Value="0" />
+            <Label Foreground="White" FontSize="30px" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Uploading your file"/>
+        </StackPanel>
+    </Grid>
+    
+    <StackPanel>
+        
+        <Label HorizontalAlignment="Center" FontSize="40" Margin="20px">Make New Post</Label>
+        <Label HorizontalAlignment="Center" FontSize="30">Title</Label>
+        <TextBox
+            x:Name="titleField"
+            materialDesign:HintAssist.Hint="Give your post an interesting title"
+            materialDesign:ValidationAssist.HorizontalAlignment="Right"
+            Margin="70px 10px"/>
+        <Label HorizontalAlignment="Center" FontSize="30">Description</Label>
+        <TextBox
+            x:Name="descriptionField"
+            Style="{StaticResource MaterialDesignOutlinedTextBox}"
+            VerticalAlignment="Top"
+            Height="100"
+            AcceptsReturn="True"
+            TextWrapping="Wrap"
+            Margin="70px 10px"
+            VerticalScrollBarVisibility="Auto"
+            materialDesign:HintAssist.Hint="Say something about your post"/>
+        <StackPanel Margin="10px" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button x:Name="addImageButton" Click="buttonClick_Post_AddImage" Margin="10px 0px" Style="{StaticResource MaterialDesignRaisedAccentButton}" MinWidth="100px" Padding="5px" Content="Add Image"/>
+            <Button x:Name="addVideoButton" Click="buttonClick_Post_AddVideo" Margin="10px 0px" Style="{StaticResource MaterialDesignRaisedAccentButton}" MinWidth="100px" Padding="5px" Content="Add Video"/>
+        </StackPanel>
+        <Button Click="buttonClick_Post_Create" Margin="10px" Style="{StaticResource MaterialDesignRaisedAccentButton}" Width="150px" Padding="5px" Content="Post"/>
+    </StackPanel>
+    
+    
+</Grid>
+

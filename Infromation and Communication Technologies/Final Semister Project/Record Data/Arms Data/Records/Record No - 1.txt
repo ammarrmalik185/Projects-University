@@ -1,0 +1,6 @@
+Serial Number     = 1
+Model Name        = Aseed
+Dealer Name       = none
+Gun Caliber       = lmao
+Price             = 5x10^10000000000000000
+Quantity          = 0

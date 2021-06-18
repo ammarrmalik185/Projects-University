@@ -1,0 +1,5 @@
+Serial Number = 3
+Model Name = 3
+Manufacturer Name = 3
+Gun Caliber = 3
+Price = 3

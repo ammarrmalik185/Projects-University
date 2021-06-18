@@ -1,0 +1,13 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/modules.xml
+/contentModel.xml
+/projectSettingsUpdater.xml
+/.idea.VP Lab 1.iml
+# Datasource local storage ignored files
+/../../../../../../../../:\Rider Projects\University\Visual Programming\VP Lab 1\.idea\.idea.VP Lab 1\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/

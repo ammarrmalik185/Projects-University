@@ -1,0 +1,42 @@
+﻿<Border x:Class="VP_Project.UI.PeopleList_UIs.default_person_template"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        CornerRadius="20"
+        Background="#12254B"
+        MinHeight="100px" Width="800" d:DataContext="{d:DesignData User |(in VP_Project.Scripts.DataStructures)}">
+    <Grid Margin="20px 10px">
+        <Button HorizontalAlignment="Left" Click="buttonClick_Post_DisplayUser" Height="Auto" Width="Auto" Background="Transparent" BorderBrush="Transparent">
+            <StackPanel Orientation="Horizontal">
+                <Border HorizontalAlignment="Left" Width="50px" Height="50px" CornerRadius="100">
+                    <Border.Background>
+                        <ImageBrush ImageSource="{Binding ProfilePicture}"/>
+                    </Border.Background>
+                </Border>
+                <Label
+                    Margin="10px"
+                    Foreground="White"
+                    FontSize="20"
+                    VerticalAlignment="Center">
+                    <TextBlock Height="auto" TextWrapping="Wrap" Text="{Binding DisplayName}"/>
+                </Label>
+            </StackPanel>
+        </Button>
+        <Button ToolTip="Follow" Click="buttonClick_User_Follow" Background="Transparent" HorizontalAlignment="Right" BorderBrush="Transparent" Height="auto">
+            <Button.Style>
+                <Style TargetType="Button" BasedOn="{StaticResource MaterialDesignRaisedAccentButton}">
+                    <Style.Triggers>
+                        <DataTrigger Binding="{Binding isFollowed}" Value="True">
+                            <Setter Property="Button.Foreground" Value="Green"/>
+                            <Setter Property="Button.ToolTip" Value="Unfollow"/>
+                        </DataTrigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Style>
+            <materialDesign:PackIcon Kind="AccountPlus" Width="50px" Height="50px" HorizontalAlignment="Center" VerticalAlignment="Center" />
+        </Button>
+    </Grid>
+</Border>

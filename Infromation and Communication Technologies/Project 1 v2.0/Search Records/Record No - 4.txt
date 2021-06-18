@@ -1,0 +1,5 @@
+Serial Number4
+Model Name(AK-47)
+Manufacturer Name(LMAO)
+Gun Caliber(9)
+Price(90000)

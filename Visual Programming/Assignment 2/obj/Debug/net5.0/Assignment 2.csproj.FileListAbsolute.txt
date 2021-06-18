@@ -1,0 +1,16 @@
+E:\Rider Projects\University\Visual Programming\Assignment 2\bin\Debug\net5.0\Assignment 2.exe
+E:\Rider Projects\University\Visual Programming\Assignment 2\bin\Debug\net5.0\Assignment 2.deps.json
+E:\Rider Projects\University\Visual Programming\Assignment 2\bin\Debug\net5.0\Assignment 2.runtimeconfig.json
+E:\Rider Projects\University\Visual Programming\Assignment 2\bin\Debug\net5.0\Assignment 2.runtimeconfig.dev.json
+E:\Rider Projects\University\Visual Programming\Assignment 2\bin\Debug\net5.0\Assignment 2.dll
+E:\Rider Projects\University\Visual Programming\Assignment 2\bin\Debug\net5.0\ref\Assignment 2.dll
+E:\Rider Projects\University\Visual Programming\Assignment 2\bin\Debug\net5.0\Assignment 2.pdb
+E:\Rider Projects\University\Visual Programming\Assignment 2\obj\Debug\net5.0\Assignment 2.csprojAssemblyReference.cache
+E:\Rider Projects\University\Visual Programming\Assignment 2\obj\Debug\net5.0\Assignment 2.GeneratedMSBuildEditorConfig.editorconfig
+E:\Rider Projects\University\Visual Programming\Assignment 2\obj\Debug\net5.0\Assignment 2.AssemblyInfoInputs.cache
+E:\Rider Projects\University\Visual Programming\Assignment 2\obj\Debug\net5.0\Assignment 2.AssemblyInfo.cs
+E:\Rider Projects\University\Visual Programming\Assignment 2\obj\Debug\net5.0\Assignment 2.csproj.CoreCompileInputs.cache
+E:\Rider Projects\University\Visual Programming\Assignment 2\obj\Debug\net5.0\Assignment 2.dll
+E:\Rider Projects\University\Visual Programming\Assignment 2\obj\Debug\net5.0\ref\Assignment 2.dll
+E:\Rider Projects\University\Visual Programming\Assignment 2\obj\Debug\net5.0\Assignment 2.pdb
+E:\Rider Projects\University\Visual Programming\Assignment 2\obj\Debug\net5.0\Assignment 2.genruntimeconfig.cache
