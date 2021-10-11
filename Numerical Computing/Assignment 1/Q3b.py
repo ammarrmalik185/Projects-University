@@ -5,11 +5,10 @@ round_figure = 100000000
 
 def f(x):
     res = eval(given_equation)
-    res = round(res * round_figure) / round_figure
     return res
 
 
-def quad_sec_root(a, b):
+def regula_falsi_method(a, b):
     c = 0
     prev_c = 0
     for i in range(1, 11):
@@ -18,8 +17,8 @@ def quad_sec_root(a, b):
         print("current range: ", a, " - ", b)
         fa = f(a)
         fb = f(b)
-        c = (a+b)/4
-        c = round(c * round_figure) / round_figure
+
+        c = (a*fb-b*fa)/(fb-fa)
         fc = f(c)
 
         print("relative error: ", c - prev_c)
@@ -36,9 +35,9 @@ def quad_sec_root(a, b):
             else:
                 a = c
 
-        print("new root: ", c)
-        print("new range: ", a, " - ", b)
+        print("new root: ", round(c * round_figure) / round_figure)
+        print("new range: ", round(a * round_figure) / round_figure, " - ", round(b * round_figure) / round_figure)
     return c
 
 
-print("root: ", quad_sec_root(-0.4, 0.4))
+print(regula_falsi_method(-0.4, 0.4))

@@ -1,5 +1,5 @@
 from math import *
-given_equation = "sin(x)+(5*x)-2"
+given_equation = "(x**4)+(3*(x**3))-(15*(x**2))-(2*x)+9"
 round_figure = 100000000
 
 
@@ -9,20 +9,23 @@ def f(x):
     return res
 
 
-def quad_sec_root(a, b):
+def custom_round(x):
+    return round(x * round_figure) / round_figure
+
+
+def bi_sec_root(a, b):
     c = 0
     prev_c = 0
     for i in range(1, 11):
         print("-------- Iteration no: ", i, " --------")
-        print("current root: ", c)
-        print("current range: ", a, " - ", b)
+        print("current root: ", custom_round(c))
+        print("current range: ", custom_round(a), " - ", custom_round(b))
         fa = f(a)
         fb = f(b)
-        c = (a+b)/4
-        c = round(c * round_figure) / round_figure
+        c = (a+b)/2
         fc = f(c)
 
-        print("relative error: ", c - prev_c)
+        print("relative error: ", custom_round(c - prev_c))
         prev_c = c
 
         if fc > 0:
@@ -36,9 +39,10 @@ def quad_sec_root(a, b):
             else:
                 a = c
 
-        print("new root: ", c)
-        print("new range: ", a, " - ", b)
+        print("new root: ", custom_round(c))
+        print("new root f: ", custom_round(fc))
+        print("new range: ", custom_round(a), " - ", custom_round(b))
     return c
 
 
-print("root: ", quad_sec_root(-0.4, 0.4))
+print("root: ", bi_sec_root(0, -1))
