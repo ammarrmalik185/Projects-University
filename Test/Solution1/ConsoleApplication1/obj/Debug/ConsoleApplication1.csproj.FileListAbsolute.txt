@@ -1,6 +1,0 @@
-E:\University Projects\Test\Solution1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
-E:\University Projects\Test\Solution1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
-E:\University Projects\Test\Solution1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.AssemblyReference.cache
-E:\University Projects\Test\Solution1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
-E:\University Projects\Test\Solution1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
-E:\University Projects\Test\Solution1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

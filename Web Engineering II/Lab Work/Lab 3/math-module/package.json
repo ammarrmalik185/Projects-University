@@ -1,0 +1,15 @@
+{
+  "name": "math-modules",
+  "version": "1.0.0",
+  "description": "math module activity for web lab 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node main.js"
+  },
+  "keywords": [
+    "lol"
+  ],
+  "author": "Ammar Rashid Malik",
+  "license": "ISC"
+}
