@@ -1,0 +1,14 @@
+extends layout
+block content
+    h1 create blog page
+    form(action="/blog/create" method="POST")
+        label(for="title") Blog Title:
+        input(type="text" id="title" name="title" required)
+
+        label(for="snippet") Blog Snippet:
+        input(type="text" id="snippet" name="snippet" required)
+
+        label(for="body") Blog Body:
+        textarea(id="body" name="body" required)
+
+        button Submit

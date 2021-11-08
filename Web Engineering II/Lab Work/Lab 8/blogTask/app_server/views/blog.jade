@@ -1,0 +1,9 @@
+extends layout
+block content
+    h1 blog view
+    ul
+        each val in data
+            li
+                h2 #{val.title}
+                p #{val.body}
+                p #{val.snippet}
