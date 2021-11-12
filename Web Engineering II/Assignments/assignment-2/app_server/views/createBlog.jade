@@ -1,0 +1,40 @@
+extends layout
+block content
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+        title Web Eng Assignment - Blogs
+        link(rel='stylesheet' href='../assets/bootstrap/css/bootstrap.min.css')
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bitter:400,700')
+        link(rel='stylesheet' href='../assets/fonts/font-awesome.min.css')
+        link(rel='stylesheet' href='../assets/fonts/ionicons.min.css')
+        link(rel='stylesheet' href='../assets/css/Footer-Basic.css')
+        link(rel='stylesheet' href='../assets/css/Footer-Dark.css')
+        link(rel='stylesheet' href='../assets/css/Forum---Thread-listing-1.css')
+        link(rel='stylesheet' href='../assets/css/Forum---Thread-listing.css')
+        link(rel='stylesheet' href='../assets/css/Header-Dark.css')
+        link(rel='stylesheet' href='../assets/css/Navigation-Clean.css')
+        link(rel='stylesheet' href='../assets/css/styles.css')
+    body
+        div.text-center(style='padding-top: 50px; padding-bottom: 50px')
+            h1 Create a Blog
+            form.text-center(method='post' action='/blog/create')
+                .row.text-center.text-sm-center(style='padding-right: 100px;padding-left: 100px;padding-bottom: 30px;padding-top: 29px;text-align: center;')
+                    .col-1
+                        label.col-form-label(style='padding: 5px;') Title: 
+                    .col
+                        input.form-control(type='text' style='padding: 5px;' name='title' placeholder='Enter Title')
+                .row.text-sm-center(style='padding-right: 100px;padding-left: 100px;padding-bottom: 30px;padding-top: 29px;text-align: center;')
+                    .col-1
+                        label.col-form-label(style='padding: 5px;') Snippet: 
+                    .col-11
+                        input.form-control(type='text' style='padding: 5px;' name='snippet' placeholder='Enter Snippet')
+                .row.text-sm-center(style='padding-right: 100px;padding-left: 100px;padding-bottom: 30px;padding-top: 29px;text-align: center;')
+                    .col-1
+                        label.col-form-label(style='padding: 5px;') Body: 
+                    .col
+                        textarea.form-control(style='height: 100px;' name='body' placeholder='Enter Body')
+                .row
+                    .col
+                        button.btn.btn-success(type='submit' style='padding-right: 100px;padding-left: 100px;') Submit
+        script(src='assets/bootstrap/js/bootstrap.min.js')

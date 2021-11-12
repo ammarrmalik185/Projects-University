@@ -1,0 +1,43 @@
+extends layout
+block content
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+        title Web Eng Assignment - Blogs
+        link(rel='stylesheet' href='assets/bootstrap/css/bootstrap.min.css')
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bitter:400,700')
+        link(rel='stylesheet' href='assets/fonts/font-awesome.min.css')
+        link(rel='stylesheet' href='assets/fonts/ionicons.min.css')
+        link(rel='stylesheet' href='assets/css/Footer-Basic.css')
+        link(rel='stylesheet' href='assets/css/Footer-Dark.css')
+        link(rel='stylesheet' href='assets/css/Forum---Thread-listing-1.css')
+        link(rel='stylesheet' href='assets/css/Forum---Thread-listing.css')
+        link(rel='stylesheet' href='assets/css/Header-Dark.css')
+        link(rel='stylesheet' href='assets/css/Navigation-Clean.css')
+        link(rel='stylesheet' href='assets/css/styles.css')
+    body
+        div.text-center(style='padding-top: 50px;')
+            h1 View Blogs
+            .container
+                .row
+                    .col-md-12
+                        form
+                            .form-group.mb-3
+                                .input-group(style='padding: 15px;')
+                                    span.input-group-addon(style='text-align: center;')
+                                        i.fa.fa-search(style='width: 40px;height: 40px;font-size: 33px;')
+                                    input.form-control(type='search' name='search')
+                        ul.thread-list(style='text-align: left;')
+                            each blog in data
+                                li.thread(style='border-radius: 6px;border-width: 1px;border-style: solid;padding: 10px; margin-bottom:5px')
+                                    span.time Date
+                                    a(href="/blog/"+blog._id.toString() style='color: rgb(0,0,0);border-bottom-color: rgba(0,0,0,0);')
+                                        span.title #{blog.title}
+
+                                    span.icon
+                                        a.flag(href="/blog/" + blog._id.toString() + "/delete")
+                                            i.fa.fa-trash(style='font-size: 33px;color: rgb(0,0,0);')
+                                    span.icon
+                                        a.flag(href="/blog/" + blog._id.toString() + "/edit")
+                                            i.fa.fa-pencil(style='font-size: 33px;color: rgb(0,0,0);')
+        script(src='assets/bootstrap/js/bootstrap.min.js')

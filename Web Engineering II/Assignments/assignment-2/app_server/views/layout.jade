@@ -1,7 +1,71 @@
 doctype html
-html
+html(lang='en')
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+    title Web Eng Assignment - Blog Website
+    link(rel='stylesheet' href='assets/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bitter:400,700')
+    link(rel='stylesheet' href='assets/fonts/font-awesome.min.css')
+    link(rel='stylesheet' href='assets/fonts/ionicons.min.css')
+    link(rel='stylesheet' href='assets/css/Footer-Basic.css')
+    link(rel='stylesheet' href='assets/css/Footer-Dark.css')
+    link(rel='stylesheet' href='assets/css/Forum---Thread-listing-1.css')
+    link(rel='stylesheet' href='assets/css/Forum---Thread-listing.css')
+    link(rel='stylesheet' href='assets/css/Header-Dark.css')
+    link(rel='stylesheet' href='assets/css/Navigation-Clean.css')
+    link(rel='stylesheet' href='assets/css/styles.css')
   body
+    nav.navbar.navebar-light.navbar-expand-md.navigation-clean.bg-dark
+      .container
+        a.navbar-brand(href='#').text-white Blog Website
+        button.navbar-toggler(data-bs-toggle='collapse' data-bs-target='#navcol-1')
+          span.visually-hidden Toggle navigation
+          span.navbar-toggler-icon
+        #navcol-1.collapse.navbar-collapse
+          ul.navbar-nav.ms-auto.text-white
+            li.nav-item
+              a.nav-link.text-white-50(href='/') Home
+            li.nav-item
+              a.nav-link.text-white-50(href='/users') Users
+            li.nav-item
+              a.nav-link.text-white-50(href='/blog') View Blogs
+            li.nav-item
+              a.nav-link.text-white-50(href='/blog/create') Create
     block content
+    footer.footer-dark
+      .container
+        .row
+          .col-sm-6.col-md-3.item
+            h3 Services
+            ul
+              li
+                a(href='#') Web design
+              li
+                a(href='#') Development
+              li
+                a(href='#') Hosting
+          .col-sm-6.col-md-3.item
+            h3 About
+            ul
+              li
+                a(href='#') Company
+              li
+                a(href='#') Team
+              li
+                a(href='#') Careers
+          .col-md-6.item.text
+            h3 Company Name
+            p
+              | Praesent sed lobortis mi. Suspendisse vel placerat ligula. Vivamus ac sem lacus. Ut vehicula rhoncus elementum. Etiam quis tristique lectus. Aliquam in arcu eget velit pulvinar dictum vel in justo.
+          .col.item.social
+            a(href='#')
+              i.icon.ion-social-facebook
+            a(href='#')
+              i.icon.ion-social-twitter
+            a(href='#')
+              i.icon.ion-social-snapchat
+            a(href='#')
+              i.icon.ion-social-instagram
+        p.copyright Company Name © 2021
+    script(src='assets/bootstrap/js/bootstrap.min.js')
