@@ -38,9 +38,9 @@ function getReservation(req, res) {
 }
 
 function deleteReservation(req, res) {
-    reservationModel.findByIdAndDelete(req.params.reservationId).exec((err, data) => {
+    reservationModel.findByIdAndDelete(req.params.reservationId).exec(err => {
         if (err) throw err
-        res.json(data)
+        res.json("deleted")
     })
 }
 

@@ -8,10 +8,6 @@ const schema = new mongoose.Schema({
   type: String,
   charges: Number,
   facilities: [String],
-  reservations: [{
-    ref: "Reservation",
-    type: mongoose.Schema.Types.ObjectId
-  }]
 })
 
 module.exports = mongoose.model("Room", schema)
