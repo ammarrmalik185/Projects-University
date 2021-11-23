@@ -10,9 +10,9 @@ const schema = new mongoose.Schema({
         ref: "Room",
         type: Number
     },
-    customer: {
+    guest: {
         required: true,
-        ref: "Customer",
+        ref: "Guest",
         type: mongoose.Schema.Types.ObjectId
     },
 })

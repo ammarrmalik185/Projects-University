@@ -6,14 +6,14 @@ function createRoom(req, res) {
 }
 
 function getAllRooms(req, res) {
-    roomModel.find({}).exec((err, data) => {
+    roomModel.find({}).populate("reservations").exec((err, data) => {
         if (err) throw err
         res.json(data)
     })
 }
 
 function getSingleRoom(req, res) {
-    roomModel.findById(req.params.roomId).exec((err, data) => {
+    roomModel.findById(req.params.roomId).populate("reservations").exec((err, data) => {
         if (err) throw err
         res.json(data)
     })
