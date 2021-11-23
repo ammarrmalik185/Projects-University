@@ -66,6 +66,5 @@ module.exports.singleBlogDelete = function (req, res, next) {
                 res.status(200)
                 res.json(null)
             }
-
         })
 }
