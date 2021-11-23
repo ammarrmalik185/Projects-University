@@ -1,4 +1,5 @@
 const roomModel = require("../models/Room")
+const reservationModel = require("../models/Reservation")
 
 function createRoom(req, res) {
     roomModel.create(req.body)
@@ -8,14 +9,28 @@ function createRoom(req, res) {
 function getAllRooms(req, res) {
     roomModel.find({}).exec((err, data) => {
         if (err) throw err
-        res.json(data)
+        let newData = JSON.parse(JSON.stringify(data));
+        reservationModel
+            .find({room: {$in: newData.map(singleElement => singleElement._id)}})
+            .exec((err2, data2) => {
+                if (err2) throw err2
+                for (let singleReservation in data2){
+                    newData.find(findElement => {})
+                }
+            })
     })
 }
 
 function getSingleRoom(req, res) {
     roomModel.findById(req.params.roomId).exec((err, data) => {
         if (err) throw err
-        res.json(data)
+        reservationModel.find({room:req.params.roomId}).exec((err2, data2) => {
+            if (err2) throw err2
+            let newData = JSON.parse(JSON.stringify(data));
+            newData.reservations = data2
+            res.json(newData)
+        })
+
     })
 }
 

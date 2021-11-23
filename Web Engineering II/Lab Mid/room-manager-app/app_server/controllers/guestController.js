@@ -10,7 +10,6 @@ function registerGuest(req, res) {
 function createReservation(req, res) {
     const reservation = new reservationModel(req.body)
     reservation.save();
-    roomModel.findByIdAndUpdate(req.body.room, {"$push": {reservations: reservation._id}})
     res.json({created:true, _id: reservation._id})
 }
 
@@ -18,7 +17,7 @@ function getReservation(req, res) {
     console.log(req.params.reservationId)
     reservationModel.findById(req.params.reservationId)
         .populate("room")
-        .populate("customer")
+        .populate("guest")
         .exec((err, data) => {
         if (err) throw err
         res.json(data)
@@ -26,9 +25,9 @@ function getReservation(req, res) {
 }
 
 function deleteReservation(req, res) {
-    reservationModel.findByIdAndDelete(req.params.reservationId).exec((err, data) => {
+    reservationModel.findByIdAndDelete(req.params.reservationId).exec(err => {
         if (err) throw err
-        res.json(data)
+        res.json("deleted")
     })
 }
 
