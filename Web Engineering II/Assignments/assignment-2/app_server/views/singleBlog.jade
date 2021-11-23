@@ -1,0 +1,39 @@
+extends layout
+block content
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0, shrink-to-fit=no')
+        title Web Eng Assignment - Blogs
+        link(rel='stylesheet' href='../../assets/bootstrap/css/bootstrap.min.css')
+        link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Bitter:400,700')
+        link(rel='stylesheet' href='../../assets/fonts/font-awesome.min.css')
+        link(rel='stylesheet' href='../../assets/fonts/ionicons.min.css')
+        link(rel='stylesheet' href='../../assets/css/Footer-Basic.css')
+        link(rel='stylesheet' href='../../assets/css/Footer-Dark.css')
+        link(rel='stylesheet' href='../../assets/css/Forum---Thread-listing-1.css')
+        link(rel='stylesheet' href='../../assets/css/Forum---Thread-listing.css')
+        link(rel='stylesheet' href='../../assets/css/Header-Dark.css')
+        link(rel='stylesheet' href='../../assets/css/Navigation-Clean.css')
+        link(rel='stylesheet' href='../../assets/css/styles.css')
+    body
+        .text-center(style='padding: 50px;')
+            h1(style='padding: 19px;') #{data.title}
+            .row(style='padding: 20px;background: #b2b2b2;border-radius: 10px;margin: 18px;')
+                .col-3
+                    h3 Snippet:
+                .col
+                    p(style='text-align: left;') #{data.snippet}
+            .row(style='padding: 20px;background: #b2b2b2;border-radius: 10px;margin: 18px;')
+                .col-3
+                    h3 Body:
+                .col
+                    p(style='text-align: left;') #{data.body}
+            .row(style='margin: 30px;')
+                .col
+                    a.flag(href="/blog/" + data._id.toString() + "/edit")
+                        button.btn.btn-warning(type='button' style='padding: 7px 100px;') Edit
+                .col
+                    a.flag(href="/blog/" + data._id.toString() + "/delete")
+                        button.btn.btn-danger(type='button' style='padding: 7px 100px;') Delete
+
+        script(src='assets/bootstrap/js/bootstrap.min.js')
