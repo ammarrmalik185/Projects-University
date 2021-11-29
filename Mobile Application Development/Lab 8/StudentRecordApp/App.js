@@ -23,13 +23,13 @@ export default function App() {
           <View style={styles.formView}>
             <Text>Student Name</Text>
             <TextInput value={currentData.name} style={styles.textInputStyle} placeholder="Enter Name" onChangeText={(text) => {
-              newData = {};
+              let newData = {};
               newData.name = text
               newData.subject1Marks = currentData.subject1Marks
               newData.subject2Marks = currentData.subject2Marks
               newData.subject3Marks = currentData.subject3Marks
               setCurrentData(newData)
-            }}></TextInput>
+            }}/>
 
             <Text>Subject 1 Marks</Text>
             <TextInput value={currentData.subject1Marks} style={styles.textInputStyle} placeholder="Enter Marks" onChangeText={(text) => {
