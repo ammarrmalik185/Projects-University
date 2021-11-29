@@ -3,6 +3,7 @@ const adminController = require("../Controllers/AdminController")
 
 const r = express.Router();
 
+r.get("/blog", adminController.getAllBlogs)
 r.get("/publisher", adminController.getAllPublishers)
 r.delete("/publisher/:publisherId", adminController.deletePublisher)
 r.get("/publisher/:publisherId/blogs",  adminController.getBlogsOfSinglePublisher)
