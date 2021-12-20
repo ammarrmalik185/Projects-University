@@ -2,11 +2,13 @@
   <div class="container"><img src="assets/img/Games-GenshinImpact-1024x1024.png" style="width: 50px;margin-right: 10px;"><a class="navbar-brand" href="#" style="color: rgb(243,243,243);">Genshin Impact</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navcol-1">
       <ul class="navbar-nav me-auto">
-        <li class="nav-item" style="color: var(--bs-blue);"><a class="nav-link" href="#" style="color: #4572a7;">Characters</a></li>
-        <li class="nav-item" style="color: var(--bs-pink);"><a class="nav-link" href="#" style="color: #4572a7;">Weapons</a></li>
-        <li class="nav-item" style="color: var(--bs-pink);"><a class="nav-link" href="#" style="color: #4572a7;">Artifacts</a></li>
-        <li class="nav-item" style="color: var(--bs-pink);"><a class="nav-link" href="#" style="color: #4572a7;">My Backpack</a></li>
-      </ul><span class="navbar-text actions"> <a class="login" href="login.html" style="color: rgb(245,245,245);">Log In</a><a class="btn btn-light action-button" role="button" href="signup.html" style="color: var(--bs-body-bg);background: var(--bs-blue);border-radius: 10px;">Sign Up</a></span>
+        <li class="nav-item" style="color: var(--bs-blue);"><a class="nav-link" [routerLink]="'characters'" style="color: #4572a7;">Characters</a></li>
+        <li class="nav-item" style="color: var(--bs-pink);"><a class="nav-link" [routerLink]="'weapons'" style="color: #4572a7;">Weapons</a></li>
+        <li class="nav-item" style="color: var(--bs-pink);"><a class="nav-link" [routerLink]="'artifacts'" style="color: #4572a7;">Artifacts</a></li>
+        <li class="nav-item" style="color: var(--bs-pink);"><a class="nav-link" [routerLink]="''" style="color: #4572a7;">My Backpack</a></li>
+      </ul><span class="navbar-text actions">
+      <a class="login" [routerLink]="'login'" style="color: rgb(245,245,245);">Log In</a>
+      <a class="btn btn-light action-button" role="button" [routerLink]="'signup'" style="color: var(--bs-body-bg);background: var(--bs-blue);border-radius: 10px;">Sign Up</a></span>
     </div>
   </div>
 </nav>

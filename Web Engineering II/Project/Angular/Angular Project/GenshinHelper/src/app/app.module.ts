@@ -18,6 +18,9 @@ import { EditArtifactComponent } from './edit-artifact/edit-artifact.component';
 import { EditCharacterComponent } from './edit-character/edit-character.component';
 import { EditWeaponComponent } from './edit-weapon/edit-weapon.component';
 
+import { HttpClientModule } from "@angular/common/http";
+import { FormsModule } from "@angular/forms";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -38,7 +41,9 @@ import { EditWeaponComponent } from './edit-weapon/edit-weapon.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

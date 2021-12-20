@@ -130,7 +130,7 @@ module.exports.DeleteArtifact = function (req, res) {
     })
 }
 
-module.exports.GetArtifactSet = function (req, res) {
+module.exports.GetAllArtifactSets = function (req, res) {
     Artifact.aggregate().group({
         _id: "$artifactSet.id",
         name: {$first: "$artifactSet.name"},
@@ -149,6 +149,30 @@ module.exports.GetArtifactSet = function (req, res) {
             }
         }
     }).exec((err, data) => {
+        if (err) throw err
+        res.json(data)
+    })
+}
+
+module.exports.GetArtifactSet = function (req, res) {
+    Artifact.aggregate().group({
+        _id: "$artifactSet.id",
+        name: {$first: "$artifactSet.name"},
+        maxRarity: {$first: "$artifactSet.maxRarity"},
+        twoPieceBonus: {$first: "$artifactSet.twoPieceBonus"},
+        fourPieceBonus: {$first: "$artifactSet.fourPieceBonus"},
+        artifacts: { $push:  {
+                id: "$id",
+                name: "$name",
+                type: "$type",
+                rarity: "$rarity",
+                description: "$description",
+                lore: "$lore",
+                location: "$location",
+                image: "$image"
+            }
+        }
+    }).match({_id: req.params.id}).exec((err, data) => {
         if (err) throw err
         res.json(data)
     })

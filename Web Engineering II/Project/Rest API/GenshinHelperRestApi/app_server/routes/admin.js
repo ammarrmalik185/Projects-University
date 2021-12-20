@@ -23,13 +23,14 @@ router.delete('/weapon/:id', adminController.DeleteWeapon)
 //Artifact
 router.get('/artifacts', adminController.GetAllArtifacts)
 router.post('/artifacts', adminController.PostMultipleArtifacts)
-
 router.post('/artifact', adminController.PostArtifact)
 router.get('/artifact/:id', adminController.GetArtifact)
 router.put('/artifact/:id', adminController.UpdateArtifact)
 router.delete('/artifact/:id', adminController.DeleteArtifact)
 
 //Artifact Set
-router.get('/artifactSet', adminController.GetArtifactSet)
+router.get('/artifactSet', adminController.GetAllArtifactSets)
+router.get('/artifactSet/:id', adminController.GetArtifactSet)
+
 
 module.exports = router
