@@ -1,1 +1,12 @@
-<p>view-blogs works!</p>
+<div class="blogs content">
+  <h2>All Blogs</h2>
+  <div *ngFor="let blog of blogs">
+    <a>
+      <h3 class="title">{{blog.title}}</h3>
+      <h3 class="snippet">{{blog.snippet}}</h3>
+      <a class="update" [routerLink]="['/updateBlogs', blog.blog_id]">Update</a>
+      <a class="delete" [routerLink]="['/deleteBlogs', blog.blog_id]">Delete</a>
+    </a>
+  </div>
+
+</div>

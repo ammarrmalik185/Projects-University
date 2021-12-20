@@ -1,0 +1,12 @@
+<div class="blogs content">
+  <h2>All Blogs</h2>
+  <div *ngFor="let blog of blogs">
+    <a>
+      <h3 class="title">{{blog.title}}</h3>
+      <h3 class="snippet">{{blog.snippet}}</h3>
+      <a class="update" [routerLink]="['/updateBlogs', blog._id]">Update</a>
+      <a class="delete" [routerLink]="['/deleteBlogs', blog._id]">Delete</a>
+    </a>
+  </div>
+
+</div>

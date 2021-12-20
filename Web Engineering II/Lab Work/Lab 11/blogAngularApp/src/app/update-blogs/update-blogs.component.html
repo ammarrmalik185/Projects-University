@@ -1,1 +1,27 @@
-<p>update-blogs works!</p>
+<div align="center">
+  <h1>Update a Blog</h1>
+  <div class="create-blog content">
+    <form name="updateform" action="" method="post">
+      <table>
+        <tr>
+          <td><label>Enter Title</label></td>
+          <td><input type="text" placeholder="Enter Blog title here" value="{{currentBlog.title}}"/></td>
+        </tr>
+        <tr>
+          <td><label>Enter Snippet</label></td>
+          <td><input type="text" placeholder="Enter Blog snippet here" value="{{currentBlog.snippet}}"/></td>
+        </tr>
+        <tr>
+          <td><label>Enter Body</label></td>
+          <td><input type="text" placeholder="Enter Blog body here" value="{{currentBlog.body}}"/></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <button type="submit" value="Update" (click)="updateBlog()">Enter Title</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+</div>

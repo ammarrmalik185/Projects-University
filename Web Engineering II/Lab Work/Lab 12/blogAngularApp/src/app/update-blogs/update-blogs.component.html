@@ -1,0 +1,27 @@
+<div align="center">
+  <h1>Update a Blog</h1>
+  <div class="create-blog content">
+    <div>
+      <table>
+        <tr>
+          <td><label>Enter Title</label></td>
+          <td><input #title name="title" type="text" placeholder="Enter Blog title here" [(ngModel)]="currentBlog.title"/></td>
+        </tr>
+        <tr>
+          <td><label>Enter Snippet</label></td>
+          <td><input #snippet name="snippet" type="text" placeholder="Enter Blog snippet here" [(ngModel)]="currentBlog.snippet"/></td>
+        </tr>
+        <tr>
+          <td><label>Enter Body</label></td>
+          <td><input #body name="body" type="text" placeholder="Enter Blog body here" [(ngModel)]="currentBlog.body"/></td>
+        </tr>
+        <tr>
+          <td colspan="2" align="center">
+            <button (click)="updateBlog()">Update</button>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+</div>
