@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Clion Projects/University Projects/DSA Project/Article.cpp
+iostream
+-
+Author.cpp
+E:/Clion Projects/University Projects/DSA Project/Author.cpp
+
+E:/Clion Projects/University Projects/DSA Project/Author.cpp
+iostream
+-
+DataStructures.cpp
+E:/Clion Projects/University Projects/DSA Project/DataStructures.cpp
+
+E:/Clion Projects/University Projects/DSA Project/DataStructures.cpp
+utility
+-
+
+E:/Clion Projects/University Projects/DSA Project/Manager.cpp
+utility
+-
+Article.cpp
+E:/Clion Projects/University Projects/DSA Project/Article.cpp
+fstream
+-
+chrono
+-
+
+E:/Clion Projects/University Projects/DSA Project/main.cpp
+iostream
+-
+Manager.cpp
+E:/Clion Projects/University Projects/DSA Project/Manager.cpp
+
