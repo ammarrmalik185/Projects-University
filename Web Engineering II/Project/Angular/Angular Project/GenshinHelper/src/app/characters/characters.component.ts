@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GenshinHelperApiService } from "../genshin-helper-api.service";
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-characters',
@@ -8,7 +9,7 @@ import { GenshinHelperApiService } from "../genshin-helper-api.service";
 })
 export class CharactersComponent implements OnInit {
 
-  constructor(private genshinAPI: GenshinHelperApiService) { }
+  constructor(private genshinAPI: GenshinHelperApiService, private router: Router) { }
   characters: any = [];
 
   ngOnInit(): void {
@@ -22,6 +23,17 @@ export class CharactersComponent implements OnInit {
 
   counter(i: number) {
     return new Array(i);
+  }
+
+  deleteCharacter(id: any){
+    this.genshinAPI.deleteSingleCharacter(id).subscribe({
+        error: (err: any) => {console.error(err)},
+        complete: () => {
+          console.log("completed");
+          window.location.reload()
+        }
+      }
+    )
   }
 
 }

@@ -15,6 +15,15 @@ export class GenshinHelperApiService {
 
   constructor(private http: HttpClient) { }
 
+  getAdmin(username: any): any{
+    let usernameId : String = username;
+    console.log(usernameId)
+    return this.http.get(this.apiUrl + "/admin/" + usernameId)
+  }
+  postAdmin(admin: any): any{
+    return this.http.post(this.apiUrl + "/admin", admin, this.httpOptions)
+  }
+
   // Artifacts
   getArtifacts() : any{
     return this.http.get(this.apiUrl + "/artifacts")
@@ -27,7 +36,7 @@ export class GenshinHelperApiService {
     return this.http.post(this.apiUrl + "/artifact", artifact, this.httpOptions)
   }
   putSingleArtifact(artifact: any) : any{
-    let artifactId : String = artifact._id;
+    let artifactId : String = artifact.id;
     return this.http.put(this.apiUrl + "/artifact/" + artifactId, artifact, this.httpOptions)
   }
   deleteSingleArtifact(id: any) : any{
@@ -56,7 +65,7 @@ export class GenshinHelperApiService {
     return this.http.post(this.apiUrl + "/weapon", weapon, this.httpOptions)
   }
   putSingleWeapon(weapon: any) : any{
-    let weaponId : String = weapon._id;
+    let weaponId : String = weapon.id;
     return this.http.put(this.apiUrl + "/weapon/" + weaponId, weapon, this.httpOptions)
   }
   deleteSingleWeapon(id: any) : any{
@@ -76,7 +85,7 @@ export class GenshinHelperApiService {
     return this.http.post(this.apiUrl + "/character", character, this.httpOptions)
   }
   putSingleCharacter(character: any) : any{
-    let characterId : String = character._id;
+    let characterId : String = character.id;
     return this.http.put(this.apiUrl + "/character/" + characterId, character, this.httpOptions)
   }
   deleteSingleCharacter(id: any) : any{

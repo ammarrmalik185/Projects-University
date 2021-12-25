@@ -20,6 +20,7 @@ import { EditWeaponComponent } from './edit-weapon/edit-weapon.component';
 
 import { HttpClientModule } from "@angular/common/http";
 import { FormsModule } from "@angular/forms";
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { FormsModule } from "@angular/forms";
     CreateWeaponComponent,
     EditArtifactComponent,
     EditCharacterComponent,
-    EditWeaponComponent
+    EditWeaponComponent,
+    IndexComponent
   ],
   imports: [
     BrowserModule,

@@ -2,7 +2,21 @@ const Player = require('../models/playerModel')
 const Character = require('../models/characterModel')
 const Artifact = require('../models/artifactModel')
 const Weapon = require('../models/weaponModel')
+const Admin = require('../models/adminModel')
 const mongoose = require("mongoose");
+
+//Admin
+module.exports.GetAdmin = function (req, res) {
+    Admin.findOne({username: req.params.username}).exec((err, data) => {
+        if (err) throw err
+        res.json(data)
+    })
+}
+module.exports.PostAdmin = function (req, res) {
+    new Admin(req.body).save()
+    res.json("Added!")
+}
+
 
 //Characters
 module.exports.PostMultipleCharacters = function (req, res) {
@@ -33,7 +47,7 @@ module.exports.GetCharacter = function (req, res) {
 }
 
 module.exports.UpdateCharacter = function (req, res) {
-    Character.findOne({id: req.params.id}, req.body).exec((err, data) => {
+    Character.findOneAndUpdate({id: req.params.id}, {$set: req.body}).exec((err, data) => {
         if (err) throw err
         res.json(data)
     })
@@ -75,7 +89,7 @@ module.exports.GetWeapon = function (req, res) {
 }
 
 module.exports.UpdateWeapon = function (req, res) {
-    Weapon.findOne({id: req.params.id}, req.body).exec((err, data) => {
+    Weapon.findOneAndUpdate({id: req.params.id}, {$set: req.body}).exec((err, data) => {
         if (err) throw err
         res.json(data)
     })
@@ -117,7 +131,7 @@ module.exports.GetArtifact = function (req, res) {
 }
 
 module.exports.UpdateArtifact = function (req, res) {
-    Artifact.findOne({id: req.params.id}, req.body).exec((err, data) => {
+    Artifact.findOneAndUpdate({id: req.params.id}, {$set: req.body}).exec((err, data) => {
         if (err) throw err
         res.json(data)
     })

@@ -4,14 +4,14 @@
     <div class="container d-flex justify-content-center">
       <div class="row text-center d-md-flex d-lg-flex d-xl-flex justify-content-md-center justify-content-lg-center justify-content-xl-center photos" data-bss-baguettebox="" style="min-width: 30%;max-width: 100%;width: 100%;">
         <div *ngFor="let character of characters" class="col-sm-6 col-md-4 col-lg-3 text-center item" style="border-radius: 10px;border-width: 1px;border-style: solid;margin: 10px;padding: 10px;width: 30%;">
-          <img src="{{character.squareCard}}" style="width: 250px;height: 250px;">
+          <img [routerLink]="'/characters/' + character.id" src="{{character.squareCard}}" style="width: 250px;height: 250px;">
           <div style="font-size: 30px;color: rgb(233,202,91);">
             <i *ngFor="let i of counter(character.rarity)" class="fa fa-star"></i>
           </div>
-          <h1 class="text-center">{{character.name}}</h1>
+          <h1 [routerLink]="'/characters/' + character.id" class="text-center">{{character.name}}</h1>
           <div style="font-size: 30px;text-align: center;">
-            <a href="#" style="color: rgb(255,255,255);margin-right: 10px;margin-left: 10px;"><i class="fa fa-edit" style="color: var(--bs-warning);"></i></a>
-            <a href="#" style="color: rgb(255,255,255);margin-right: 10px;margin-left: 10px;"><i class="fa fa-trash-o" style="color: var(--bs-red);"></i></a>
+            <a [routerLink]="'/editCharacters/' + character.id" style="color: rgb(255,255,255);margin-right: 10px;margin-left: 10px;"><i class="fa fa-edit" style="color: var(--bs-warning);"></i></a>
+            <a style="color: rgb(255,255,255);margin-right: 10px;margin-left: 10px; " (click)="deleteCharacter(character.id)"><i class="fa fa-trash-o" style="color: var(--bs-red);"></i></a>
           </div>
         </div>
       </div>

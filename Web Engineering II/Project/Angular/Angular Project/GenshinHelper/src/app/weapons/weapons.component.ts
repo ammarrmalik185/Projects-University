@@ -22,4 +22,16 @@ export class WeaponsComponent implements OnInit {
   counter(i: number) {
     return new Array(i);
   }
+
+  deleteWeapon(id: any){
+    this.genshinAPI.deleteSingleWeapon(id).subscribe({
+        error: (err: any) => {console.error(err)},
+        complete: () => {
+          console.log("completed");
+          window.location.reload()
+        }
+      }
+    )
+  }
+
 }

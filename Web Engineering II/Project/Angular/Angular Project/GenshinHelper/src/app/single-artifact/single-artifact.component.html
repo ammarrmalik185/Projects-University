@@ -1,40 +1,51 @@
 <div class="accordion-collapse routerOutletContainer">
-  <div class="d-flex d-sm-flex d-xl-flex align-items-center align-items-sm-center align-items-xl-center" style="width: 100%;"><img src="https://impact.moe/assets/img/artifact-icons/adventurers-flower.webp" style="width: 30%;">
+  <div class="d-flex d-sm-flex d-xl-flex align-items-center align-items-sm-center align-items-xl-center" style="width: 100%;">
+    <img src="{{currentArtifactSet.artifacts[0].image}}" style="width: 30%;">
     <div style="display: inline-block;width: 69%;">
-      <h1 class="display-1 text-start" style="font-family: Alata, sans-serif;">Adventurer's Set</h1>
-      <div style="color: var(--bs-warning);padding: 10px;"><i class="fa fa-star" style="font-size: 40px;"></i><i class="fa fa-star" style="font-size: 40px;"></i><i class="fa fa-star" style="font-size: 40px;"></i></div>
+      <h1 class="display-1 text-start" style="font-family: Alata, sans-serif;">{{currentArtifactSet.name}}</h1>
+      <div style="color: var(--bs-warning);padding: 10px;">
+        <i class="fa fa-star" style="font-size: 40px;" *ngFor="let artifact of counter(currentArtifactSet.maxRarity)"></i>
+      </div>
     </div>
   </div>
   <div style="padding: 30px;">
     <div>
       <h2>2 Piece Bonus:</h2>
-      <p>Max HP increased by 1,000.</p>
+      <p>{{currentArtifactSet.twoPieceBonus}}</p>
     </div>
     <div>
       <h2>4 Piece Bonus:</h2>
-      <p>Opening chest regenerates 30% Max HP over 5s</p>
+      <p>{{currentArtifactSet.fourPieceBonus}}</p>
     </div>
   </div>
   <div>
     <ul class="list-unstyled" style="padding: 20px;">
-      <li class="d-flex align-items-center" style="padding: 20px;border-radius: 10px;border-width: 1px;border-style: solid;margin-bottom: 10px;">
-        <div style="width: 30%;"><img class="d-inline-flex flex-grow-0 flex-shrink-1 justify-content-center align-items-center" src="https://impact.moe/assets/img/artifact-icons/adventurers-flower.webp" style="width: 100%;" width="100%"></div>
+      <li class="d-flex align-items-center" style="padding: 20px;border-radius: 10px;border-width: 1px;border-style: solid;margin-bottom: 10px;" *ngFor="let artifact of currentArtifactSet.artifacts">
+        <div style="width: 30%;">
+          <img class="d-inline-flex flex-grow-0 flex-shrink-1 justify-content-center align-items-center" src="{{artifact.image}}" style="width: 100%;" width="100%"></div>
         <div style="display: inline-block;width: 79%;">
           <div>
-            <h1>Adventurer's Flower</h1>
-            <p>Flower of Life</p>
+            <h1>{{artifact.name}}</h1>
+            <p>{{artifact.type}}</p>
+          </div>
+          <div style="color: var(--bs-warning);padding: 10px;">
+            <i *ngFor="let i of counter(artifact.rarity)" class="fa fa-star" style="font-size: 40px;"></i>
           </div>
           <div>
             <h3>Location:</h3>
-            <p>Chests</p>
+            <p>{{artifact.location}}</p>
           </div>
           <div>
             <h3>Description:</h3>
-            <p>A resilient flower that survived the harsh environment of an ancient city. It is now proudly worn like a medal.</p>
+            <p>{{artifact.description}}</p>
           </div>
           <div>
             <h3>Lore:</h3>
-            <p>The ambitious adventurer came across this resilient flower in the depths of a gloomy ruin. Moved by the sight of life sprouting in defiance of a lifeless land, he almost forgot about the treasures buried deep in the ruin. After pausing to ponder it for a while, the adventurer plucked the flower, wore it as a brooch, and ventured forth into the darkness.</p>
+            <p>{{artifact.lore}}</p>
+          </div>
+          <div style="font-size: 30px;text-align: center;">
+            <a [routerLink]="'/editArtifact/' + artifact.id" style="color: rgb(255,255,255);margin-right: 10px;margin-left: 10px;"><i class="fa fa-edit" style="color: var(--bs-warning);"></i></a>
+            <a style="color: rgb(255,255,255);margin-right: 10px;margin-left: 10px; " (click)="deleteArtifact(artifact.id)"><i class="fa fa-trash-o" style="color: var(--bs-red);"></i></a>
           </div>
         </div>
       </li>

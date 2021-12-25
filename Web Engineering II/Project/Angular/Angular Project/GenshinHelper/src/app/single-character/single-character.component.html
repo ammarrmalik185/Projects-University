@@ -1,44 +1,49 @@
 <div class="accordion-collapse routerOutletContainer">
   <div class="d-sm-flex d-xl-flex align-items-sm-center align-items-xl-center" style="width: 100%;text-align: left;">
-    <div class="d-flex justify-content-center" style="text-align: center;min-width: auto;width: 30%;"><img class="d-flex align-items-center" src="https://impact.moe/assets/img/portraits/Albedo.webp" style="width: auto;text-align: center;max-height: 700px;max-width: 100%;"></div>
+    <div class="d-flex justify-content-center" style="text-align: center;min-width: auto;width: 30%;">
+      <img src="{{currentCharacter.image}}" style="width: auto;text-align: center;max-height: 700px;max-width: 100%;">
+    </div>
     <div style="display: inline-block;width: 69%;padding: 30px;">
       <div style="margin: 10px;">
-        <h1 class="display-1 text-start" style="font-family: Alata, sans-serif;margin-bottom: 0px;">Albedo</h1><span style="font-size: 25px;color: rgb(166,166,166);">Kreideprinz</span>
+        <h1 class="display-1 text-start" style="font-family: Alata, sans-serif;margin-bottom: 0px;">{{currentCharacter.name}}</h1><span style="font-size: 25px;color: rgb(166,166,166);">{{currentCharacter.title}}</span>
       </div>
-      <div style="color: var(--bs-warning);padding: 10px;margin: 2%;"><i class="fa fa-star" style="font-size: 40px;"></i><i class="fa fa-star" style="font-size: 40px;"></i><i class="fa fa-star" style="font-size: 40px;"></i><i class="fa fa-star" style="font-size: 40px;"></i><i class="fa fa-star" style="font-size: 40px;"></i></div>
-      <div style="margin: 5px;">
-        <h3 style="color: var(--bs-blue);font-weight: bold;">Weapon:&nbsp;</h3><span style="font-size: 20px;color: rgb(158,155,155);">Sword</span>
-      </div>
-      <div style="margin: 5px;">
-        <h3 style="color: var(--bs-blue);font-weight: bold;">Element:&nbsp;</h3><span style="font-size: 20px;color: rgb(158,155,155);">Geo</span>
+      <div style="color: var(--bs-warning);padding: 10px;margin: 2%;">
+        <i *ngFor="let i of counter(currentCharacter.rarity)" class="fa fa-star" style="font-size: 40px;"></i>
       </div>
       <div style="margin: 5px;">
-        <h3 style="color: var(--bs-blue);font-weight: bold;">Region:&nbsp;</h3><span style="font-size: 20px;color: rgb(158,155,155);">Mondstadt</span>
+        <h3 style="color: var(--bs-blue);font-weight: bold;">Weapon:&nbsp;</h3><span style="font-size: 20px;color: rgb(158,155,155);">{{currentCharacter.weapon}}</span>
       </div>
       <div style="margin: 5px;">
-        <h3 style="color: var(--bs-blue);font-weight: bold;">Faction:&nbsp;</h3><span style="font-size: 20px;color: rgb(158,155,155);">Knights of Favonius</span>
+        <h3 style="color: var(--bs-blue);font-weight: bold;">Element:&nbsp;</h3><span style="font-size: 20px;color: rgb(158,155,155);">{{currentCharacter.element}}</span>
       </div>
       <div style="margin: 5px;">
-        <h3 style="color: var(--bs-blue);font-weight: bold;">Birthday:&nbsp;</h3><span style="font-size: 20px;color: rgb(158,155,155);">September 13th</span>
+        <h3 style="color: var(--bs-blue);font-weight: bold;">Region:&nbsp;</h3><span style="font-size: 20px;color: rgb(158,155,155);">{{currentCharacter.region}}</span>
+      </div>
+      <div style="margin: 5px;">
+        <h3 style="color: var(--bs-blue);font-weight: bold;">Faction:&nbsp;</h3><span style="font-size: 20px;color: rgb(158,155,155);">{{currentCharacter.faction}}</span>
+      </div>
+      <div style="margin: 5px;">
+        <h3 style="color: var(--bs-blue);font-weight: bold;">Birthday:&nbsp;</h3><span style="font-size: 20px;color: rgb(158,155,155);">{{currentCharacter.birthday}}</span>
       </div>
       <div style="margin: 5px;">
         <h3 style="color: var(--bs-blue);font-weight: bold;">Description:</h3>
-        <p style="color: rgb(158,155,155);">An alchemist based in Mondstadt, in the service of the Knights of Favonius.</p>
+        <p style="color: rgb(158,155,155);">{{currentCharacter.description}}</p>
       </div>
     </div>
   </div>
   <div>
     <h2 class="display-1 text-center">Constellation</h2>
     <ul class="list-unstyled" style="padding: 20px;">
-      <li class="d-flex align-items-center" style="padding: 20px;border-radius: 10px;border-width: 1px;border-style: solid;margin-bottom: 10px;"><span style="width: 5%;font-size: 40px;">1.&nbsp;</span>
-        <div style="width: 15%;"><img class="d-inline-flex flex-grow-0 flex-shrink-1 justify-content-center align-items-center" src="https://impact.moe/assets/img/constellation-icons/albedo/flower-of-eden.webp" width="100%" style="height: 100%;"></div>
+      <li class="d-flex align-items-center" style="padding: 20px;border-radius: 10px;border-width: 1px;border-style: solid;margin-bottom: 10px;" *ngFor="let constellation of currentCharacter.constellations">
+        <span style="width: 5%;font-size: 40px;">{{constellation.order}}&nbsp;</span>
+        <div style="width: 15%;"><img class="d-inline-flex flex-grow-0 flex-shrink-1 justify-content-center align-items-center" src="{{constellation.image}}" width="100%" style="height: 100%;"></div>
         <div style="display: inline-block;width: 84%;padding: 30px;">
           <div>
-            <h1>Flower of Eden</h1>
+            <h1>{{constellation.name}}</h1>
           </div>
           <div>
             <h3>Description:</h3>
-            <p>Transient Blossoms generated by Albedo's Abiogenesis: Solar Isotoma regenerate 1.2 Energy for Albedo.</p>
+            <p>{{constellation.description}}</p>
           </div>
         </div>
       </li>
@@ -47,15 +52,17 @@
   <div>
     <h2 class="display-1 text-center">Talents</h2>
     <ul class="list-unstyled" style="padding: 20px;">
-      <li class="d-flex align-items-center" style="padding: 20px;border-radius: 10px;border-width: 1px;border-style: solid;margin-bottom: 10px;">
-        <div style="width: 20%;"><img class="d-inline-flex flex-grow-0 flex-shrink-1 justify-content-center align-items-center" src="https://impact.moe/assets/img/talent-icons/albedo/favonius-bladework-weiss.webp" width="100%" style="height: 100%;"></div>
+      <li class="d-flex align-items-center" style="padding: 20px;border-radius: 10px;border-width: 1px;border-style: solid;margin-bottom: 10px;" *ngFor="let talent of currentCharacter.talents">
+        <div style="width: 20%;">
+          <img class="d-inline-flex flex-grow-0 flex-shrink-1 justify-content-center align-items-center" src="{{talent.image}}" width="100%" style="height: 100%;">
+        </div>
         <div style="display: inline-block;width: 84%;padding: 30px;">
           <div>
-            <h1>Favonius Bladework - Weiss</h1><span>Normal Attack</span>
+            <h1>{{talent.name}}</h1><span>{{talent.type}}</span>
           </div>
           <div>
             <h3>Description:</h3>
-            <p>Normal Attack Perform up to 5 rapid strikes. Charged Attack Consumes a certain amount of Stamina to unleash 2 rapid sword strikes. Plunging Attack Plunges from mid-air to strike the ground below, damaging opponents along the path and dealing AoE DMG upon impact.</p>
+            <p>{{talent.description}}</p>
           </div>
         </div>
       </li>

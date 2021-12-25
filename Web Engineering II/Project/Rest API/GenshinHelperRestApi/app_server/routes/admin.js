@@ -2,6 +2,10 @@ const express = require('express');
 const router = express.Router();
 const adminController = require('../controllers/adminController')
 
+//Admin
+router.get('/admin/:username', adminController.GetAdmin)
+router.post('/admin', adminController.PostAdmin)
+
 //Characters
 router.get('/characters', adminController.GetAllCharacters)
 router.post('/characters', adminController.PostMultipleCharacters)
