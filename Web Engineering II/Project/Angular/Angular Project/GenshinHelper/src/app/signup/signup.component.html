@@ -2,10 +2,10 @@
   <form>
     <h2 class="visually-hidden">Login Form</h2>
     <div class="illustration"><img class="img-fluid" src="assets/img/Games-GenshinImpact-1024x1024.png" width="150"></div>
-    <div class="mb-3"><input class="form-control" type="text" name="username" placeholder="Username" [(ngModel)]="data.username"></div>
-    <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email" [(ngModel)]="data.email"></div>
-    <div class="mb-3"><input class="form-control" type="text" name="password" placeholder="Name"  [(ngModel)]="data.name"></div>
-    <div class="mb-3"><input class="form-control" type="password" placeholder="Password" [(ngModel)]="data.password"></div>
+    <div class="mb-3"><input class="form-control" type="text" name="username" placeholder="Username" [ngModelOptions]="{standalone: true}" [(ngModel)]="data.username"></div>
+    <div class="mb-3"><input class="form-control" type="email" name="email" placeholder="Email" [ngModelOptions]="{standalone: true}" [(ngModel)]="data.email"></div>
+    <div class="mb-3"><input class="form-control" type="text" name="password" placeholder="Name" [ngModelOptions]="{standalone: true}"  [(ngModel)]="data.name"></div>
+    <div class="mb-3"><input class="form-control" type="password" placeholder="Password" [ngModelOptions]="{standalone: true}" [(ngModel)]="data.password"></div>
     <div class="mb-3"><button class="btn btn-primary d-block w-100" (click)="onSubmit()" >Sign up</button></div>
     <a class="forgot" href="#" style="color: var(--bs-blue);">Forgot your email or password?</a>
     <a class="forgot" [routerLink]="'login'" style="background: rgba(13,110,253,0);border-color: var(--bs-blue);color: var(--bs-blue);">Already Have an account? Log in!</a>

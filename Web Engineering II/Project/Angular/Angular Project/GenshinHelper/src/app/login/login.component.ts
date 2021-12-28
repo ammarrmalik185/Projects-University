@@ -23,9 +23,13 @@ export class LoginComponent implements OnInit {
   onSubmit(){
     this.genshinAPI.getAdmin(this.data.username).subscribe({
       next: (admin: any) => {
+        console.log(admin)
+        console.log(this.data.password)
         if (admin){
-          if(admin.password == this.data.password)
+          if(admin.password == this.data.password) {
+
             this.router.navigate(["/"])
+          }
         }
       },
       error: (err: any) => {console.error(err)},

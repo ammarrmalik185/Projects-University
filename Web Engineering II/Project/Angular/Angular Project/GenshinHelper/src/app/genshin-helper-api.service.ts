@@ -17,7 +17,6 @@ export class GenshinHelperApiService {
 
   getAdmin(username: any): any{
     let usernameId : String = username;
-    console.log(usernameId)
     return this.http.get(this.apiUrl + "/admin/" + usernameId)
   }
   postAdmin(admin: any): any{
