@@ -1,0 +1,5 @@
+C:\Projects\University Projects\Design Patterns\Lab Task\Test\bin\Debug\Test.exe
+C:\Projects\University Projects\Design Patterns\Lab Task\Test\bin\Debug\Test.pdb
+C:\Projects\University Projects\Design Patterns\Lab Task\Test\obj\Debug\Test.csprojResolveAssemblyReference.cache
+C:\Projects\University Projects\Design Patterns\Lab Task\Test\obj\Debug\Test.exe
+C:\Projects\University Projects\Design Patterns\Lab Task\Test\obj\Debug\Test.pdb

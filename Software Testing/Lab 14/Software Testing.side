@@ -1,0 +1,49 @@
+{
+  "id": "83ce91d3-65df-41df-8c0f-4aaafe79f683",
+  "version": "2.0",
+  "name": "Software Testing",
+  "url": "https://www.daraz.pk/",
+  "tests": [{
+    "id": "a9ab1fe5-bb2b-428e-8303-16c94c1b48d2",
+    "name": "Index Page Test",
+    "commands": [{
+      "id": "56098aa3-0170-4d80-a588-325fea52d2db",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.daraz.pk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9393fdd7-2939-4787-8fa0-71b2aba0c0e8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1382x736",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a93f6118-7b6d-4fba-a9d2-97c5a9e81cad",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,463)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f12c7172-5add-447f-8610-4d9272bb31e0",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,1941)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d5e3115b-ed10-41e9-8cf3-7cf0462f05af",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a9ab1fe5-bb2b-428e-8303-16c94c1b48d2"]
+  }],
+  "urls": ["https://www.daraz.pk/"],
+  "plugins": []
+}
