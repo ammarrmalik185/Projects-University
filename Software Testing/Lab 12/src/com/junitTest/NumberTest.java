@@ -3,36 +3,34 @@ import static org.junit.Assert.*;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-
+import org.junit.Ignore;
 
 public class NumberTest {
 
+    Number test;
+
     @Before
     public void beforeTest() {
-        System.out.println("Before");
+        test = new Number();
     }
-
 
     @Test
     public void palindromeTest (){
-        Number test=new Number();
         assertEquals("palindrome",test.palindrome(22122));
-
     }
 
     @Test
     public void factTest (){
-        Number test=new Number();
         assertEquals(5040,test.fact(7));
+        assertEquals(4.5, 4.4, 0.2);
+        fail();
     }
 
     @Test
     public void sumTest (){
-        Number test=new Number();
+        assertNull(null);
         assertEquals(16,test.sum(745));
     }
-
-
 
     @After
     public void afterTest() {

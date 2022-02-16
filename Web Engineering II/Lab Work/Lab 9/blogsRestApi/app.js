@@ -15,7 +15,7 @@ const app = express();
 app.set('views', path.join(__dirname, "app_server", 'views'));
 app.set('view engine', 'jade');
 
-var corsOptions = {
+let corsOptions = {
   origin: '*',
   optionsSuccessStatus: 200,
 }

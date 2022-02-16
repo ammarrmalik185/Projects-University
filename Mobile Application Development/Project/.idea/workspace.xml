@@ -2,10 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8aaf3769-f852-40b0-a8ed-328f9291c0f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/run.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/GenshinHelper/.expo/packager-info.json" beforeDir="false" afterPath="$PROJECT_DIR$/GenshinHelper/.expo/packager-info.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.expo/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.expo/settings.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/newArtifactData.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/newCharacterData.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/data/newWeaponData.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Software Testing/Lab 12/src/com/junitTest/StandardCalculatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Web Engineering II/Project/Rest API/GenshinHelperRestApi.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenshinHelper/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/GenshinHelper/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenshinHelper/components/AccountSettings.js" beforeDir="false" afterPath="$PROJECT_DIR$/GenshinHelper/components/AccountSettings.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenshinHelper/components/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/GenshinHelper/components/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenshinHelper/components/ListArtifact.js" beforeDir="false" afterPath="$PROJECT_DIR$/GenshinHelper/components/ListArtifact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenshinHelper/components/ListCharacter.js" beforeDir="false" afterPath="$PROJECT_DIR$/GenshinHelper/components/ListCharacter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenshinHelper/components/ListChooseArtifact.js" beforeDir="false" afterPath="$PROJECT_DIR$/GenshinHelper/components/ListChooseArtifact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenshinHelper/components/ListChooseCharacter.js" beforeDir="false" afterPath="$PROJECT_DIR$/GenshinHelper/components/ListChooseCharacter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenshinHelper/components/ListChooseProfilePicture.js" beforeDir="false" afterPath="$PROJECT_DIR$/GenshinHelper/components/ListChooseProfilePicture.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenshinHelper/components/ListChooseWeapon.js" beforeDir="false" afterPath="$PROJECT_DIR$/GenshinHelper/components/ListChooseWeapon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenshinHelper/components/ListTeam.js" beforeDir="false" afterPath="$PROJECT_DIR$/GenshinHelper/components/ListTeam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenshinHelper/components/ListWeapon.js" beforeDir="false" afterPath="$PROJECT_DIR$/GenshinHelper/components/ListWeapon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenshinHelper/components/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/GenshinHelper/components/Login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenshinHelper/components/Signup.js" beforeDir="false" afterPath="$PROJECT_DIR$/GenshinHelper/components/Signup.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenshinHelper/components/SingleArtifact.js" beforeDir="false" afterPath="$PROJECT_DIR$/GenshinHelper/components/SingleArtifact.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenshinHelper/components/SingleCharacter.js" beforeDir="false" afterPath="$PROJECT_DIR$/GenshinHelper/components/SingleCharacter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenshinHelper/components/SingleTeam.js" beforeDir="false" afterPath="$PROJECT_DIR$/GenshinHelper/components/SingleTeam.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenshinHelper/components/SingleWeapon.js" beforeDir="false" afterPath="$PROJECT_DIR$/GenshinHelper/components/SingleWeapon.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GenshinHelper/config/theme.js" beforeDir="false" afterPath="$PROJECT_DIR$/GenshinHelper/config/theme.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Software Testing/Lab 12/out/production/Lab 12/com/junitTest/Number.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Software Testing/Lab 12/out/production/Lab 12/com/junitTest/Number.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Software Testing/Lab 12/out/production/Lab 12/com/junitTest/NumberTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../Software Testing/Lab 12/out/production/Lab 12/com/junitTest/NumberTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Software Testing/Lab 12/src/com/junitTest/NumberTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Software Testing/Lab 12/src/com/junitTest/NumberTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,13 +64,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/GenshinHelper/run.bat" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/GenshinHelper/components" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="C:\Software\JetBrains\apps\WebStorm\ch-0\213.6461.79\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\University Projects\Mobile Application Development\Project\GenshinHelper\components" />
+      <recent name="E:\University Projects\Mobile Application Development\Project" />
+      <recent name="E:\University Projects\Mobile Application Development\Project\GenshinHelper\resources\images" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\University Projects\Mobile Application Development\Project\GenshinHelper\assets" />
+      <recent name="E:\University Projects\Mobile Application Development\Project\GenshinHelper\config" />
       <recent name="E:\University Projects\Mobile Application Development\Project" />
     </key>
   </component>
@@ -77,6 +111,15 @@
       <workItem from="1640449713189" duration="1942000" />
       <workItem from="1640451762205" duration="3122000" />
       <workItem from="1640499982341" duration="2974000" />
+      <workItem from="1640862708620" duration="891000" />
+      <workItem from="1641209206517" duration="33423000" />
+      <workItem from="1641293035042" duration="26684000" />
+      <workItem from="1641378317940" duration="4412000" />
+      <workItem from="1641389975303" duration="13533000" />
+      <workItem from="1641408835452" duration="216000" />
+      <workItem from="1641488482862" duration="9685000" />
+      <workItem from="1641548961104" duration="639000" />
+      <workItem from="1641747087096" duration="303000" />
     </task>
     <servers />
   </component>
