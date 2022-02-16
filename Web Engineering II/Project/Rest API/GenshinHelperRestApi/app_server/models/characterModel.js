@@ -7,7 +7,6 @@ const characterSchema = mongoose.Schema({
     squareCard: String,
     tier: String,
     rarity: {
-        min: 3,
         max: 5,
         type: Number
     },

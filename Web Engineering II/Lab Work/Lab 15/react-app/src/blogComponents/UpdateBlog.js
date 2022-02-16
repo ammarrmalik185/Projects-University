@@ -1,13 +1,16 @@
 import './UpdateBlog.css'
-import {blogs} from './blogs'
 import { useParams } from 'react-router-dom'
+import React from "react";
 
 export default function UpdateBlog() {
-    var params = useParams()
-    
-    var blog = blogs.find(item=>{
-        return item.blog_id == params.blogId
+    const params = useParams()
+    const [blog, setBlog] = React.useState({
+        title:"",
+        body: "",
+        snippet: ""
     })
+
+    fetch("http://localhost:3002/blog/" + params.blog_id).then(data => data.json().then(setBlog))
 
     return(
         <div align='center'>
